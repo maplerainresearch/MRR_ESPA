@@ -1,5 +1,14 @@
 Changes
 -------
+
+v1.1
+----
+- Production version.
+  - Removed header pins for those pins already used.
+  - UART header removed as it is redundant with AUX1.
+  - Level shift resistors for AUX1 removed as ESP32 is 5V tolerant when powered with 3.3V.
+  - Endstop connectors changed to JST XH connectors.
+
 v1.01
 -----
 - Widened VBED-related trace widths to solve issues with high temperatures when heating. 
