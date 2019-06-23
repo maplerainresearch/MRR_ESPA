@@ -1,0 +1,74 @@
+[
+ {
+  "name": "InitSD",
+  "glyph": "floppy-disk",
+  "filename": "/initsd.g",
+  "target": "ESP",
+  "class": "btn-default",
+  "index": 0
+ },
+ {
+  "name": "ABL",
+  "glyph": "sort",
+  "filename": "/startabl.g",
+  "target": "ESP",
+  "class": "btn-default",
+  "index": 1
+ },
+ {
+  "name": "NextPt",
+  "glyph": "ok",
+  "filename": "/nextpt.g",
+  "target": "ESP",
+  "class": "btn-default",
+  "index": 2
+ },
+ {
+  "name": "xABL",
+  "glyph": "remove",
+  "filename": "/abortabl.g",
+  "target": "ESP",
+  "class": "btn-default",
+  "index": 3
+ },
+ {
+  "name": "QueryABL",
+  "glyph": "question-sign",
+  "filename": "/queryabl.g",
+  "target": "ESP",
+  "class": "btn-default",
+  "index": 4
+ },
+ {
+  "name": "Z+",
+  "glyph": "open",
+  "filename": "/zup001.g",
+  "target": "ESP",
+  "class": "btn-default",
+  "index": 5
+ },
+ {
+  "name": "Z-",
+  "glyph": "save",
+  "filename": "/zdown001.g",
+  "target": "ESP",
+  "class": "btn-default",
+  "index": 6
+ },
+ {
+  "name": "BabyZ+",
+  "glyph": "triangle-top",
+  "filename": "/babyzup.g",
+  "target": "ESP",
+  "class": "btn-default",
+  "index": 7
+ },
+ {
+  "name": "BabyZ-",
+  "glyph": "triangle-bottom",
+  "filename": "/babyzdn.g",
+  "target": "ESP",
+  "class": "btn-default",
+  "index": 8
+ }
+]

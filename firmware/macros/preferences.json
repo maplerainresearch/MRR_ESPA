@@ -1,0 +1,30 @@
+[
+ {
+  "language": "en",
+  "enable_camera": "true",
+  "auto_load_camera": "false",
+  "camera_address": "http&#58;&#47;&#47;octopi&#46;local&#47;webcam&#47;&#63;action&#61;stream",
+  "enable_DHT": "false",
+  "enable_lock_UI": "false",
+  "is_mixed_extruder": "false",
+  "number_extruders": "1",
+  "enable_bed": "true",
+  "enable_fan": "true",
+  "enable_z": "true",
+  "enable_control_panel": "true",
+  "enable_temperatures_panel": "true",
+  "enable_extruder_panel": "true",
+  "enable_grbl_panel": "true",
+  "enable_files_panel": "true",
+  "interval_positions": "3",
+  "interval_status": "3",
+  "xy_feedrate": "1000",
+  "z_feedrate": "100",
+  "interval_temperatures": "3",
+  "e_feedrate": "400",
+  "e_distance": "5",
+  "enable_autoscroll": "true",
+  "enable_verbose_mode": "true",
+  "enable_commands_panel": "true"
+ }
+]
