@@ -1,0 +1,87 @@
+Changes
+-------
+v1.01
+-----
+- Widened VBED-related trace widths to solve issues with high temperatures when heating. 
+
+v1.0
+----
+- Widened trace width of high current bearing lines, like those used for the heatbed and hotend. Changed via diameter for VBED line to match the track width; the diameter used in previous versions was too small, causing excessive heat buildup and burning the PCB.
+- Exposed underside of PCB for MOSFETs and VBED terminals for better heat dissipation.
+- Removed TXS0102 level shifter; used a simple voltage divider on RX pin, while TX pin is left as it is.
+- Amended jumpers for stepper drivers; changed to connect to either VIO, GND, or unconnected. Removed CS_PIN headers, unrouted SPI nets (MOSI, MISO, SCK) from stepper drivers. TMC2130 drivers can be connected in standalone (non-SPI) mode by removing all the jumpers under the driver. For TMC2208 drivers, MS1 and MS2 can be connected to GND or VIO to set microstepping in standalone mode; remove MS3 and RST jumpers. TMC2130 drivers with their SPI pins exposed on top can be connected to the board's SPI pins (for CS, use one of the unused ESP32 pins such as SDA, SCL, or IO0).
+
+v0.9
+----
+- TLP182 (SMD-4) optocoupler and voltage divider to drive bed MOSFET so that a separate PSU can be used, referencing Little-Driver (https://github.com/Digital-Sqrt/Little-Driver).
+- 74LVC1G125 (SOT-353) to drive E0 and fan MOSFETs.
+- TXS0102 level shifter for AUX1; allows AUX1 to be used with 5V logic. The TXS0102 will translate the UART (RX and TX) bidirectionally between 5V (AUX1) and 3.3V (ESP32).
+- Remove 5V select circuit; switched to using 1N5819 diodes to prevent reverse voltage.
+- Amended several capacitors which were mistakenly connected in series instead of in parallel. Specifically, C11 and C12 in v0.8.
+- Amended DTR/RTS circuit; previously, IO0 connected to wrong side of S9014, which prevented flashing of firmware via USB.
+- Fixed microSD card connections (MISO and MOSI were connected in reverse).
+
+v0.8
+----
+- Renamed as MRR ESPA.
+- Migrated to KiCad.
+- Shifted position of ESP32 to expose the antenna outside the board. Also, reduced the routing of lines under the ESP32 module to prevent interference.
+- Removed 74HCT125; the MOSFETs used can perform adequately well at 3.3V logic without having to translate up to 5V. The footprint freed up will be used to house 74HC595s in version 2 of the board to utilize I2S for motor control.
+- Instead of 74HCT125, BSS138 transistors have been added for level translation to drive MOSFETs at 5V.
+- Removed Vout_SEL jumper. Breakout pins will be 3.3V; 5V can be obtained from AUX1.
+- Changed F2 fuse to 10A fuse. Previously 3A, not enough to support hotend.
+- Added decoupling capacitor for ESP32.
+- TX/RX lines have been routed as far as possible as a differential pair.
+- EN button renamed "RESET" on the board.
+
+v0.7
+----
+- Added capacitors to endstops for filtering.
+- Changed thermistor resistors to 4.7K (original 47K was mistake).
+- Removed TMC2208 PD_UART jumpers as the current setup does not have enough sets of TX/RX pins to support at least 2 drivers (X and Y).
+- Removed button for IO0.
+- Renamed "EN" button to "BOOT" button.
+- Added capacitors to 3.3V regulator for more stable power.
+- Replaced 5V step-down circuit. Uses TPS54340 instead of LM2596 for a smaller footprint. Circuit was designed using TI's Webench. Previous LM2596 circuit was using an underspec inductor (540mA) instead of something over 4.5A. Space freed up will eventually be used in version 2 of the board, which will incorporate I2S.
+- Replaced 74HCT02 with 74HCT125, which is a non-inverting buffer gate. May eventually be switched to I2S in version 2 if I2S can stably run MOSFETs.
+- Added MOSFET enable jumper (MOS_EN). When testing the rest of the board, this jumper can be left open to disable the 74HCT126.
+- Replaced 5V_SEL jumper with an OPAMP and P-channel MOSFET instead, to avoid power problems should the user forget to set the jumper correctly. This selection circuit is similar to that being used on the Arduino UNO R3.
+
+v0.6
+----
+- Changed capacitors for motor drivers to 100uF.
+- Changed bed mosfet to IRLS3034PBF, which has a lower on-resistance at 4.5V.
+- Used 74HCT02 to drive mosfets.
+
+v0.5
+----
+- Added jumpers to allow TMC drivers to be used.
+  - Connect or disconnect MS1, MS2, MS3 jumpers for normal microstepping control (A4988, etc.).
+  - Connect RST to SLP for normal drivers like A4988.
+  - Connect MS1, MS2, MS3, RST jumpers to TMC side for TMC2130.
+  - Connect RST jumper to TMC side for TMC2208; MS1 and MS2 can still be used for microstepping.
+  - Connect TMC_SEL jumper to SPI for TMC2130, and UART for TMC2208.
+  - When using TMC2130 SPI, connect X, Y, Z, or E0 pin on CS_PIN row to the pin that is to be used for CS on the ESP32 breakout row.
+- Fixed missing nets on v0.4 PCB.
+
+v0.4
+----
+- Renamed power inputs to VIN and VBED.
+- Changed reverse current protection diodes to parallel instead of series.
+
+v0.3
+----
+- Initial release on Github.
+- Changed to use 5.08mm pitch terminals instead of 7.62mm pitch terminals to reduce footprint.
+- Added AUX1 connector.
+
+v0.2
+----
+- Overhaul of v0.1 to use ESP32-WROOM-32 module instead of development boards.
+- Added design consideration to fit within 100mm x 100mm of PCB area.
+- Support for 4 stepper drivers, single hot end, single heat bed, single part cooling fan.
+- Pinout based on current (2018-11-25) pins_ESP32.h of Marlin firmware (bugsfix-2.0.x branch).
+
+v0.1
+----
+- Based on 2 x LOLIN32 development boards, with one running Marlin firmware, and another running ESP3D to provide user interface.
