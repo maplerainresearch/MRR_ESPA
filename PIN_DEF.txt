@@ -1,0 +1,32 @@
+Pin Definitions for MRR ESPE
+----------------------------
+
+ESP32 pins
+0: unused (IO0; must not be pulled low for normal bootup)
+1: TX
+2: HEATER_0_PIN
+3: RX
+4: HEATER_BED_PIN
+5: SS_PIN (SDSS)
+12: Z_DIR_PIN
+13: FAN_PIN
+14: Z_STEP_PIN
+15: Z_MIN_PIN
+16: E0_STEP_PIN
+17: E0_DIR_PIN
+18: SCK_PIN
+19: MISO_PIN
+21: unused (SDA)
+22: unused (SCL)
+23: MOSI_PIN
+25: X_ENABLE_PIN (shared with Y, Z, and E0)
+26: X_DIR_PIN
+27: X_STEP_PIN
+32: Y_DIR_PIN
+33: Y_STEP_PIN
+34: X_MIN_PIN
+35: Y_MIN_PIN
+36 (VP): TEMP_0_PIN
+39 (VN): TEMP_BED_PIN
+
+

@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP TXS0102DCUR
+D 2-Bit Bidirectional Voltage-Level Translator in US8 Package With Auto Direction Sensing and ±15-kV ESD Protection
+K Level-Shifter CMOS-TTL-Translation
+F http://www.ti.com/lit/ds/symlink/txs0102.pdf
+$ENDCMP
+#
+#End Doc Library

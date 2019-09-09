@@ -8,3 +8,8 @@ Schematics of the following boards were referenced in the design of MRR ESPA:
 - [Smoothieboard](https://github.com/Smoothieware/Smoothieboard)
 - [Arduino UNO R3](https://www.arduino.cc/en/uploads/Main/Arduino_Uno_Rev3-schematic.pdf)
 - [Little-Driver](https://github.com/Digital-Sqrt/Little-Driver)
+
+Software:
+- [Custom Marlin fork](https://github.com/luc-github/Marlin) by luc-github
+- [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI)
+- [Marlin firmware](https://github.com/MarlinFirmware/Marlin)

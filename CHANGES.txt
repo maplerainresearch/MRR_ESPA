@@ -1,13 +1,28 @@
 Changes
 -------
+v1.3
+----
+- Added debounce capacitor to RESET button.
+- Change VUSB_EN jumper to 5V_SEL jumper, to select between VUSB and VIN for 5V source.
+
+v1.2
+----
+- Changed MOSFETs to Winsok MOSFETs (bed: WSK220N04; E0: WSF3085; fan: WSF3038).
+- Added jumper to disable VUSB.
+- Added PWR_SEL jumper to choose if voltage divider should be used for gate voltage of bed MOSFET (use voltage divider for 24V, skip voltage divider for 12V).
+- Added TMC2130 jumpers. Switch jumpers under stepper drivers to SPI side, then use jumper wires to connect the desired CS pins to an unused pin (0 [IO0], 21 [SDA], or 22 [SCL]).
+- Change layout of TPS54340-related circuit to follow recommended PCB layout in data sheet.
+- See v1.1 for other production-related changes.
 
 v1.1
 ----
 - Production version.
-  - Removed header pins for those pins already used.
-  - UART header removed as it is redundant with AUX1.
-  - Level shift resistors for AUX1 removed as ESP32 is 5V tolerant when powered with 3.3V.
-  - Endstop connectors changed to JST XH connectors.
+- Removed header pins for those pins already used.
+- UART header removed as it is redundant with AUX1.
+- Level shift resistors for AUX1 removed as ESP32 is 5V tolerant when powered with 3.3V.
+- Endstop and thermistor connectors changed to JST XH connectors. Stepper motor connectors continue to use generic 2.54mm pitch male headers so as to be easy to flip around.
+- Board size reduced to 99.5mm by 90.5mm.
+- Unused pins are IO0, IO21 (SDA), and IO22 (SCL).
 
 v1.01
 -----
