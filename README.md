@@ -13,6 +13,10 @@ Features:
 - Physical size of 99.5mm by 90.5mm. Mounting holes are 3.5mm in diameter, with centers 4mm from the edges.
 - "RESET" button can be used to reset the board.
 
+[![](http://img.youtube.com/vi/s4IRmG6ibc4/0.jpg)](http://www.youtube.com/watch?v=s4IRmG6ibc4 "Basic features")
+
+[![](http://img.youtube.com/vi/E-ERUolL-Bw/0.jpg)](http://www.youtube.com/watch?v=E-ERUolL-Bw "Printing via ESP3D webUI")
+
 # Firmware
 
 Marlin 2.0 has added support for ESP32. This board was based on the initial pins definition used. <br>
