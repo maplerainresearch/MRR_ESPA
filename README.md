@@ -31,7 +31,7 @@ In addition, [Luc](https://github.com/luc-github) has been working on a Marlin f
 
 # Jumpers
 
-- VUSB_EN: Leave open for normal operation; only short (close) this jumper if you need to power the board via USB. Note: Powering the board with both PSU and USB may cause unstable operation during heating.
+- 5V_SEL: Connect to VIN for normal operation; only short (close) this jumper to VUSB if you need to power the board via USB. Note: Powering the board with both PSU and USB may cause unstable operation during heating.
 - PWR_SEL: Connect the middle pin PWR_SEL to pin labeled "12V" if using 12V; connect PWR_SEL to pin labeled "24V" if using 24V.
 - Stepper driver jumpers:
   - MS1: VIO to set high; SPI if using TMC SPI mode
