@@ -3,7 +3,10 @@
 
 This is a bare-minimum 3D printer control board based on the ESP32 microcontroller, which comes with built-in WiFi and BlueTooth.
 
-Features:
+![](https://github.com/maplerainresearch/MRR_ESPA/blob/master/media/boards/MRR_ESPA_v1.2.jpg)
+Current version: v1.2 (not for production)
+
+## Features:
 - Able to use up to 4 stepper drivers: X, Y, Z, and E0
 - 12V to 24V input power supply
 - Separate power supply for the heat bed
