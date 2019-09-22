@@ -20,6 +20,8 @@ Current version: v1.2 (not for production)
 
 [![](http://img.youtube.com/vi/E-ERUolL-Bw/0.jpg)](http://www.youtube.com/watch?v=E-ERUolL-Bw "Printing via ESP3D webUI")
 
+Check out the [Kickstarter page.](https://www.kickstarter.com/projects/maplerainresearch/mrr-espa)
+
 # Firmware
 
 Marlin 2.0 has added support for ESP32. This board was based on the initial pins definition used. <br>
