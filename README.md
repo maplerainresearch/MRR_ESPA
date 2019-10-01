@@ -3,8 +3,10 @@
 
 This is a bare-minimum 3D printer control board based on the ESP32 microcontroller, which comes with built-in WiFi and BlueTooth.
 
-![](https://github.com/maplerainresearch/MRR_ESPA/blob/master/media/boards/MRR_ESPA_v1.2.jpg)
+![](media/boards/MRR_ESPA_v1.3.jpg)
 Current version: v1.2 (not for production)
+
+For inquiries about how to obtain the MRR ESPA, please email [info@maplerain.com](mailto:info@maplerain.com) with the subject "MRR ESPA".
 
 ## Features:
 - Able to use up to 4 stepper drivers: X, Y, Z, and E0
@@ -43,7 +45,6 @@ In addition, [Luc](https://github.com/luc-github) has been working on a Marlin f
   - MS2: VIO to set high; SPI if using TMC SPI mode
   - MS3: VIO to set high; SPI if using TMC SPI mode
   - RST: SLP if using A4988/DRV8825; SPI if using TMC SPI mode
-  - Note: TMC SPI mode for the ESP32 is still under development. MRR ESPA is hardware-ready in anticipation of proper software support.
 
 # Pins
 
