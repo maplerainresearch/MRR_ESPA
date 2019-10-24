@@ -4,7 +4,7 @@
 This is a bare-minimum 3D printer control board based on the ESP32 microcontroller, which comes with built-in WiFi and BlueTooth.
 
 ![](media/boards/MRR_ESPA_v1.3.jpg)
-Current version: v1.2 (not for production)
+Current version: v1.3
 
 For inquiries about how to obtain the MRR ESPA, please email [info@maplerain.com](mailto:info@maplerain.com) with the subject "MRR ESPA".
 

@@ -2,14 +2,14 @@
 <export version="D">
   <design>
     <source>/home/teck/github/MRR_ESPA/working/MRR_ESPA.sch</source>
-    <date>Sun 04 Aug 2019 05:03:05 PM JST</date>
+    <date>Sun 06 Oct 2019 07:21:43 PM JST</date>
     <tool>Eeschema 5.0.2-bee76a0~70~ubuntu18.04.1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title>MRR ESPA</title>
         <company/>
-        <rev>v1.2</rev>
-        <date>2019-07-06</date>
+        <rev>v1.3</rev>
+        <date>2019-10-06</date>
         <source>MRR_ESPA.sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
@@ -23,6 +23,11 @@
       <value>ESP32-WROOM-32D</value>
       <footprint>RF_Module:ESP32-WROOM-32</footprint>
       <datasheet>https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32d_esp32-wroom-32u_datasheet_en.pdf</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C95209</field>
+        <field name="Manufacturer">Espressif Systems</field>
+        <field name="Mfg part no.">ESP32-WROOM-32</field>
+      </fields>
       <libsource lib="RF_Module" part="ESP32-WROOM-32D" description="RF Module, ESP32-D0WD SoC, Wi-Fi 802.11b/g/n, Bluetooth, BLE, 32-bit, 2.7-3.6V, SMD"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C471F27</tstamp>
@@ -31,38 +36,63 @@
       <value>PWR_IN</value>
       <footprint>TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-3-4-5.08_1x04_P5.08mm_Horizontal</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C90087</field>
+        <field name="Manufacturer">Phoenix Contact</field>
+        <field name="Mfg part no.">MKDS3/4-5.08</field>
+      </fields>
       <libsource lib="Connector_Generic" part="Conn_01x04" description="Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C47289B</tstamp>
     </comp>
     <comp ref="F1">
-      <value>10A 1808</value>
+      <value>15A 2410</value>
       <footprint>projfp:Littelfuse_0451</footprint>
-      <datasheet>~</datasheet>
+      <datasheet>Bel 0679H9150-01</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C44480</field>
+        <field name="Manufacturer">Littelfuse</field>
+        <field name="Mfg part no.">0451015.MRL</field>
+      </fields>
       <libsource lib="Device" part="Fuse" description="Fuse"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C472A2F</tstamp>
     </comp>
     <comp ref="F2">
-      <value>20A 1808</value>
-      <footprint>projfp:Littelfuse_0451</footprint>
-      <datasheet>~</datasheet>
+      <value>30A 3912</value>
+      <footprint>projfp:Littelfuse_456</footprint>
+      <datasheet>Bel 0678H9300-02</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C187558</field>
+        <field name="Manufacturer">Littelfuse</field>
+        <field name="Mfg part no.">0456030.ER</field>
+      </fields>
       <libsource lib="Device" part="Fuse" description="Fuse"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C472AAF</tstamp>
     </comp>
     <comp ref="D4">
-      <value>1N4007</value>
+      <value>1N4007W</value>
       <footprint>projfp:D_SOD-123F</footprint>
       <datasheet>http://www.vishay.com/docs/88503/1n4001.pdf</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C108803</field>
+        <field name="Manufacturer">Shandong Jingdao Microelectronics</field>
+        <field name="Mfg part no.">1N4007W</field>
+      </fields>
       <libsource lib="Diode" part="1N4007" description="1000V 1A General Purpose Rectifier Diode, DO-41"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C472E04</tstamp>
     </comp>
     <comp ref="D5">
-      <value>1N4007</value>
+      <value>1N4007W</value>
       <footprint>projfp:D_SOD-123F</footprint>
       <datasheet>http://www.vishay.com/docs/88503/1n4001.pdf</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C108803</field>
+        <field name="Manufacturer">Shandong Jingdao Microelectronics</field>
+        <field name="Mfg part no.">1N4007W</field>
+      </fields>
       <libsource lib="Diode" part="1N4007" description="1000V 1A General Purpose Rectifier Diode, DO-41"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C472EB6</tstamp>
@@ -71,6 +101,11 @@
       <value>TPS54340DDA</value>
       <footprint>Package_SO:TI_SO-PowerPAD-8_ThermalVias</footprint>
       <datasheet>http://www.ti.com/lit/ds/symlink/tps54340.pdf</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C45886</field>
+        <field name="Manufacturer">Texas Instruments</field>
+        <field name="Mfg part no.">TPS54340DDAR</field>
+      </fields>
       <libsource lib="Regulator_Switching" part="TPS54340DDA" description="3.5A, Step Down DC-DC Converter with Eco-mode, 4.5-42V Input Voltage, PowerSO-8"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C47356D</tstamp>
@@ -79,6 +114,11 @@
       <value>100nF50V</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C161260</field>
+        <field name="Manufacturer">Murata Electronics</field>
+        <field name="Mfg part no.">GCM21BR71H104KA37L</field>
+      </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C473694</tstamp>
@@ -87,6 +127,11 @@
       <value>4.7uF50V</value>
       <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C307575</field>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="Mfg part no.">CL31B475KBHNFNE</field>
+      </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C4737EF</tstamp>
@@ -95,6 +140,11 @@
       <value>100uF50V</value>
       <footprint>Capacitor_SMD:CP_Elec_8x10</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C176665</field>
+        <field name="Manufacturer">Lelon</field>
+        <field name="Mfg part no.">VEJ101M1HTR-0810</field>
+      </fields>
       <libsource lib="Device" part="CP1" description="Polarized capacitor, US symbol"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C473883</tstamp>
@@ -103,6 +153,11 @@
       <value>4.7uH4.5A</value>
       <footprint>projfp:SMMS0530</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C181722</field>
+        <field name="Manufacturer">Shun Xiang Nuo Elec</field>
+        <field name="Mfg part no.">SMMS0530-4R7M</field>
+      </fields>
       <libsource lib="Device" part="L" description="Inductor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C4744ED</tstamp>
@@ -111,6 +166,11 @@
       <value>B540C-13-F</value>
       <footprint>projfp:D_SMC</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C72264</field>
+        <field name="Manufacturer">Diodes Incorporated</field>
+        <field name="Mfg part no.">B540C-13-F</field>
+      </fields>
       <libsource lib="Device" part="D_Schottky_ALT" description="Schottky diode, filled shape"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C47492C</tstamp>
@@ -119,6 +179,11 @@
       <value>60.4K</value>
       <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C273994</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="Mfg part no.">RC0805FR-0760K4L</field>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C474CD7</tstamp>
@@ -127,6 +192,11 @@
       <value>11.5K</value>
       <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C17418</field>
+        <field name="Manufacturer">Uniroyal Elec</field>
+        <field name="Mfg part no.">0805W8F1152T5E</field>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C474D4D</tstamp>
@@ -135,6 +205,11 @@
       <value>47uF16V</value>
       <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C92821</field>
+        <field name="Manufacturer">Taiyo Yuden</field>
+        <field name="Mfg part no.">LMK316BJ476ML-T</field>
+      </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C474DBB</tstamp>
@@ -143,6 +218,11 @@
       <value>820pF50V</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C152862</field>
+        <field name="Manufacturer">Walsin Tech Corp</field>
+        <field name="Mfg part no.">0805B821K500CT</field>
+      </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C4755CC</tstamp>
@@ -151,6 +231,11 @@
       <value>23.7K</value>
       <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C170848</field>
+        <field name="Manufacturer">Walsin Tech Corp</field>
+        <field name="Mfg part no.">WR08X2372FTL</field>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C47564A</tstamp>
@@ -159,6 +244,11 @@
       <value>56pF50V</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C296102</field>
+        <field name="Manufacturer">Walsin Tech Corp</field>
+        <field name="Mfg part no.">0805N560J500CT</field>
+      </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C476272</tstamp>
@@ -167,6 +257,11 @@
       <value>73.2K</value>
       <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C170958</field>
+        <field name="Manufacturer">Walsin Tech Corp</field>
+        <field name="Mfg part no.">WR08X7322FTL</field>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C4769EF</tstamp>
@@ -175,22 +270,37 @@
       <value>AMS1117-3.3</value>
       <footprint>Package_TO_SOT_SMD:SOT-223-3_TabPin2</footprint>
       <datasheet>http://www.advanced-monolithic.com/pdf/ds1117.pdf</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C6186</field>
+        <field name="Manufacturer">Advanced Monolithic Systems</field>
+        <field name="Mfg part no.">AMS1117-3.3</field>
+      </fields>
       <libsource lib="Regulator_Linear" part="AMS1117-3.3" description="1A Low Dropout regulator, positive, 3.3V fixed output, SOT-223"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C477F7F</tstamp>
     </comp>
     <comp ref="C14">
-      <value>47uF16V</value>
+      <value>47uF6.3V</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C87159</field>
+        <field name="Manufacturer">Taiyo Yuden</field>
+        <field name="Mfg part no.">JMK212BJ476MG-T</field>
+      </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C478011</tstamp>
     </comp>
     <comp ref="C13">
-      <value>47uF16V</value>
+      <value>47uF6.3V</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C87159</field>
+        <field name="Manufacturer">Taiyo Yuden</field>
+        <field name="Mfg part no.">JMK212BJ476MG-T</field>
+      </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C478126</tstamp>
@@ -199,6 +309,11 @@
       <value>220R</value>
       <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C17557</field>
+        <field name="Manufacturer">Uniroyal Elec</field>
+        <field name="Mfg part no.">0805W8F2200T5E</field>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C47DAA5</tstamp>
@@ -207,6 +322,11 @@
       <value>LED_3V</value>
       <footprint>projfp:LED_0805</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C73548</field>
+        <field name="Manufacturer">Everlight Elec</field>
+        <field name="Mfg part no.">17-21SYGC/S530-E2/TR8</field>
+      </fields>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C47E11D</tstamp>
@@ -215,6 +335,11 @@
       <value>330R</value>
       <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C17630</field>
+        <field name="Manufacturer">Uniroyal Elec</field>
+        <field name="Mfg part no.">0805W8F3300T5E</field>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C47F28F</tstamp>
@@ -223,6 +348,11 @@
       <value>2.2K</value>
       <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C17520</field>
+        <field name="Manufacturer">Uniroyal Elec</field>
+        <field name="Mfg part no.">0805W8F2201T5E</field>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C47F321</tstamp>
@@ -231,6 +361,11 @@
       <value>2.2K</value>
       <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C17520</field>
+        <field name="Manufacturer">Uniroyal Elec</field>
+        <field name="Mfg part no.">0805W8F2201T5E</field>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C47F572</tstamp>
@@ -239,6 +374,11 @@
       <value>LED_5V</value>
       <footprint>projfp:LED_0805</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C73548</field>
+        <field name="Manufacturer">Everlight Elec</field>
+        <field name="Mfg part no.">17-21SYGC/S530-E2/TR8</field>
+      </fields>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C47F5CC</tstamp>
@@ -247,6 +387,11 @@
       <value>LED_VIN</value>
       <footprint>projfp:LED_0805</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C72035</field>
+        <field name="Manufacturer">Everlight Elec</field>
+        <field name="Mfg part no.">17-21/BHC-XL2M2TY/3T</field>
+      </fields>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C47F626</tstamp>
@@ -255,6 +400,11 @@
       <value>LED_VBED</value>
       <footprint>projfp:LED_0805</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C72035</field>
+        <field name="Manufacturer">Everlight Elec</field>
+        <field name="Mfg part no.">17-21/BHC-XL2M2TY/3T</field>
+      </fields>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C47F67E</tstamp>
@@ -263,6 +413,11 @@
       <value>0R</value>
       <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C17477</field>
+        <field name="Manufacturer">Uniroyal Elec</field>
+        <field name="Mfg part no.">0805W8F0000T5E</field>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C474830</tstamp>
@@ -271,14 +426,24 @@
       <value>0R</value>
       <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C17477</field>
+        <field name="Manufacturer">Uniroyal Elec</field>
+        <field name="Mfg part no.">0805W8F0000T5E</field>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C474919</tstamp>
     </comp>
     <comp ref="C11">
-      <value>10nF16V</value>
+      <value>10nF50V</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C52278</field>
+        <field name="Manufacturer">Guangdong Fenghua Advanced Tech</field>
+        <field name="Mfg part no.">0805B103K500NT</field>
+      </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C47B65A</tstamp>
@@ -287,6 +452,11 @@
       <value>USB_B_Micro</value>
       <footprint>Connector_USB:USB_Micro-B_Molex-105017-0001</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C136000</field>
+        <field name="Manufacturer">MOLEX</field>
+        <field name="Mfg part no.">105017-0001</field>
+      </fields>
       <libsource lib="Connector" part="USB_B_Micro" description="USB Micro Type B connector"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C47D718</tstamp>
@@ -295,6 +465,11 @@
       <value>PESD5V0S1BA</value>
       <footprint>projfp:D_SOD-323</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C19224</field>
+        <field name="Manufacturer">Nexperia</field>
+        <field name="Mfg part no.">PESD5V0S1BA,115</field>
+      </fields>
       <libsource lib="Device" part="D_TVS_ALT" description="Bidirectional transient-voltage-suppression diode, filled shape"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C47EC63</tstamp>
@@ -303,6 +478,11 @@
       <value>PESD5V0S1BA</value>
       <footprint>projfp:D_SOD-323</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C19224</field>
+        <field name="Manufacturer">Nexperia</field>
+        <field name="Mfg part no.">PESD5V0S1BA,115</field>
+      </fields>
       <libsource lib="Device" part="D_TVS_ALT" description="Bidirectional transient-voltage-suppression diode, filled shape"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C47F935</tstamp>
@@ -311,6 +491,11 @@
       <value>S9014</value>
       <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
       <datasheet>http://www.onsemi.com/pub_link/Collateral/2N3055-D.PDF</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C181164</field>
+        <field name="Manufacturer">Guangdong Hottech</field>
+        <field name="Mfg part no.">S9014</field>
+      </fields>
       <libsource lib="Transistor_BJT" part="2N3055" description="15A Ic, 60V Vce, Power NPN Transistor, TO-3"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C488D63</tstamp>
@@ -319,6 +504,11 @@
       <value>S9014</value>
       <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
       <datasheet>http://www.onsemi.com/pub_link/Collateral/2N3055-D.PDF</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C181164</field>
+        <field name="Manufacturer">Guangdong Hottech</field>
+        <field name="Mfg part no.">S9014</field>
+      </fields>
       <libsource lib="Transistor_BJT" part="2N3055" description="15A Ic, 60V Vce, Power NPN Transistor, TO-3"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C488E37</tstamp>
@@ -327,6 +517,11 @@
       <value>12K</value>
       <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C17444</field>
+        <field name="Manufacturer">Uniroyal Elec</field>
+        <field name="Mfg part no.">0805W8F1202T5E</field>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C489193</tstamp>
@@ -335,6 +530,11 @@
       <value>12K</value>
       <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C17444</field>
+        <field name="Manufacturer">Uniroyal Elec</field>
+        <field name="Mfg part no.">0805W8F1202T5E</field>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C4892FA</tstamp>
@@ -343,6 +543,11 @@
       <value>WSK220N04</value>
       <footprint>Package_TO_SOT_SMD:TO-263-2</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C148446</field>
+        <field name="Manufacturer">Winsok Semicon</field>
+        <field name="Mfg part no.">WSK220N04</field>
+      </fields>
       <libsource lib="Device" part="Q_NMOS_GDS" description="N-MOSFET transistor, gate/drain/source"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C4AF72B</tstamp>
@@ -351,14 +556,24 @@
       <value>WSF3085</value>
       <footprint>Package_TO_SOT_SMD:TO-252-2</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C148428</field>
+        <field name="Manufacturer">Winsok Semicon</field>
+        <field name="Mfg part no.">WSF3085</field>
+      </fields>
       <libsource lib="Device" part="Q_NMOS_GDS" description="N-MOSFET transistor, gate/drain/source"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C4AF993</tstamp>
     </comp>
     <comp ref="Q3">
-      <value>WST3038</value>
+      <value>WSF3038</value>
       <footprint>Package_TO_SOT_SMD:TO-252-2</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C148426</field>
+        <field name="Manufacturer">Winsok Semicon</field>
+        <field name="Mfg part no.">WSF3038</field>
+      </fields>
       <libsource lib="Device" part="Q_NMOS_GDS" description="N-MOSFET transistor, gate/drain/source"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C4AFB01</tstamp>
@@ -367,6 +582,11 @@
       <value>2.2K</value>
       <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C17520</field>
+        <field name="Manufacturer">Uniroyal Elec</field>
+        <field name="Mfg part no.">0805W8F2201T5E</field>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C4AFBFB</tstamp>
@@ -375,6 +595,11 @@
       <value>LED_BED</value>
       <footprint>projfp:LED_0805</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C72037</field>
+        <field name="Manufacturer">Everlight Elec</field>
+        <field name="Mfg part no.">17-21SURC/S530-A3/TR8</field>
+      </fields>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C4B13D3</tstamp>
@@ -383,6 +608,11 @@
       <value>BED</value>
       <footprint>TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-3-2-5.08_1x02_P5.08mm_Horizontal</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C89120</field>
+        <field name="Manufacturer">Phoenix Contact</field>
+        <field name="Mfg part no.">MKDS3/2-5.08</field>
+      </fields>
       <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C4B5F89</tstamp>
@@ -391,6 +621,11 @@
       <value>2.2K</value>
       <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C17520</field>
+        <field name="Manufacturer">Uniroyal Elec</field>
+        <field name="Mfg part no.">0805W8F2201T5E</field>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C4CC9CD</tstamp>
@@ -399,6 +634,11 @@
       <value>E0</value>
       <footprint>TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C91153</field>
+        <field name="Manufacturer">Phoenix Contact</field>
+        <field name="Mfg part no.">MKDSN1.5/2-5.08</field>
+      </fields>
       <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C4CE77B</tstamp>
@@ -407,6 +647,11 @@
       <value>10R</value>
       <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C17415</field>
+        <field name="Manufacturer">Uniroyal Elec</field>
+        <field name="Mfg part no.">0805W8F100JT5E</field>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C4CE82B</tstamp>
@@ -415,6 +660,11 @@
       <value>100K</value>
       <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C149504</field>
+        <field name="Manufacturer">Uniroyal Elec</field>
+        <field name="Mfg part no.">0805W8F1003T5E</field>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C4CE8E5</tstamp>
@@ -423,6 +673,11 @@
       <value>2.2K</value>
       <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C17520</field>
+        <field name="Manufacturer">Uniroyal Elec</field>
+        <field name="Mfg part no.">0805W8F2201T5E</field>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C4D0E19</tstamp>
@@ -431,6 +686,11 @@
       <value>10R</value>
       <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C17415</field>
+        <field name="Manufacturer">Uniroyal Elec</field>
+        <field name="Mfg part no.">0805W8F100JT5E</field>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C4D0EDD</tstamp>
@@ -439,6 +699,11 @@
       <value>100K</value>
       <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C149504</field>
+        <field name="Manufacturer">Uniroyal Elec</field>
+        <field name="Mfg part no.">0805W8F1003T5E</field>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C4D0FA3</tstamp>
@@ -447,6 +712,11 @@
       <value>PART_FAN</value>
       <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C124375</field>
+        <field name="Manufacturer">Shenzhen Cankemeng</field>
+        <field name="Mfg part no.">C124375</field>
+      </fields>
       <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C4D107D</tstamp>
@@ -454,6 +724,11 @@
     <comp ref="U8">
       <value>Pololu_board</value>
       <footprint>Module:Pololu_Breakout-16_15.2x20.3mm</footprint>
+      <fields>
+        <field name="LCSC Part Number">C27438</field>
+        <field name="Manufacturer">Boom Precision Elec</field>
+        <field name="Mfg part no.">x2</field>
+      </fields>
       <libsource lib="MRR_ESPA-rescue" part="Pololu_board-projsym" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C481511</tstamp>
@@ -461,6 +736,11 @@
     <comp ref="U5">
       <value>Pololu_board</value>
       <footprint>Module:Pololu_Breakout-16_15.2x20.3mm</footprint>
+      <fields>
+        <field name="LCSC Part Number">C27438</field>
+        <field name="Manufacturer">Boom Precision Elec</field>
+        <field name="Mfg part no.">x2</field>
+      </fields>
       <libsource lib="MRR_ESPA-rescue" part="Pololu_board-projsym" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C4A43D7</tstamp>
@@ -469,6 +749,11 @@
       <value>X_MOTOR</value>
       <footprint>Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C124378</field>
+        <field name="Manufacturer">Shenzhen Cankemeng</field>
+        <field name="Mfg part no.">C124378</field>
+      </fields>
       <libsource lib="Connector_Generic" part="Conn_01x04" description="Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C4A43DE</tstamp>
@@ -477,6 +762,11 @@
       <value>100uF35V</value>
       <footprint>Capacitor_SMD:CP_Elec_6.3x7.7</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C97811</field>
+        <field name="Manufacturer">Semtech</field>
+        <field name="Mfg part no.">CS1V101M-CRE77</field>
+      </fields>
       <libsource lib="Device" part="CP1" description="Polarized capacitor, US symbol"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C4A43F9</tstamp>
@@ -484,6 +774,11 @@
     <comp ref="U6">
       <value>Pololu_board</value>
       <footprint>Module:Pololu_Breakout-16_15.2x20.3mm</footprint>
+      <fields>
+        <field name="LCSC Part Number">C27438</field>
+        <field name="Manufacturer">Boom Precision Elec</field>
+        <field name="Mfg part no.">x2</field>
+      </fields>
       <libsource lib="MRR_ESPA-rescue" part="Pololu_board-projsym" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C4A8197</tstamp>
@@ -491,6 +786,11 @@
     <comp ref="U9">
       <value>Pololu_board</value>
       <footprint>Module:Pololu_Breakout-16_15.2x20.3mm</footprint>
+      <fields>
+        <field name="LCSC Part Number">C27438</field>
+        <field name="Manufacturer">Boom Precision Elec</field>
+        <field name="Mfg part no.">x2</field>
+      </fields>
       <libsource lib="MRR_ESPA-rescue" part="Pololu_board-projsym" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C4AC259</tstamp>
@@ -499,6 +799,11 @@
       <value>10K</value>
       <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C38522</field>
+        <field name="Manufacturer">Uniroyal Elec</field>
+        <field name="Mfg part no.">0805W8F2201T5E</field>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C4B161C</tstamp>
@@ -507,6 +812,11 @@
       <value>FAN_HEATSINK</value>
       <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C124375</field>
+        <field name="Manufacturer">Shenzhen Cankemeng</field>
+        <field name="Mfg part no.">C124375</field>
+      </fields>
       <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C4BF25F</tstamp>
@@ -515,6 +825,11 @@
       <value>100uF35V</value>
       <footprint>Capacitor_SMD:CP_Elec_6.3x7.7</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C97811</field>
+        <field name="Manufacturer">Semtech</field>
+        <field name="Mfg part no.">CS1V101M-CRE77</field>
+      </fields>
       <libsource lib="Device" part="CP1" description="Polarized capacitor, US symbol"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C483572</tstamp>
@@ -523,6 +838,11 @@
       <value>100uF35V</value>
       <footprint>Capacitor_SMD:CP_Elec_6.3x7.7</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C97811</field>
+        <field name="Manufacturer">Semtech</field>
+        <field name="Mfg part no.">CS1V101M-CRE77</field>
+      </fields>
       <libsource lib="Device" part="CP1" description="Polarized capacitor, US symbol"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C483650</tstamp>
@@ -531,6 +851,11 @@
       <value>100uF35V</value>
       <footprint>Capacitor_SMD:CP_Elec_6.3x7.7</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C97811</field>
+        <field name="Manufacturer">Semtech</field>
+        <field name="Mfg part no.">CS1V101M-CRE77</field>
+      </fields>
       <libsource lib="Device" part="CP1" description="Polarized capacitor, US symbol"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C48372E</tstamp>
@@ -539,6 +864,11 @@
       <value>Y_MOTOR</value>
       <footprint>Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C124378</field>
+        <field name="Manufacturer">Shenzhen Cankemeng</field>
+        <field name="Mfg part no.">C124378</field>
+      </fields>
       <libsource lib="Connector_Generic" part="Conn_01x04" description="Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C484D10</tstamp>
@@ -547,6 +877,11 @@
       <value>E0_MOTOR</value>
       <footprint>Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C124378</field>
+        <field name="Manufacturer">Shenzhen Cankemeng</field>
+        <field name="Mfg part no.">C124378</field>
+      </fields>
       <libsource lib="Connector_Generic" part="Conn_01x04" description="Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C484E06</tstamp>
@@ -555,6 +890,11 @@
       <value>Z_MOTOR</value>
       <footprint>Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C124386</field>
+        <field name="Manufacturer">Shenzhen Cankemeng</field>
+        <field name="Mfg part no.">C124386</field>
+      </fields>
       <libsource lib="Connector_Generic" part="Conn_02x04_Odd_Even" description="Generic connector, double row, 02x04, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C484EE6</tstamp>
@@ -563,6 +903,11 @@
       <value>LED_E0</value>
       <footprint>projfp:LED_0805</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C72037</field>
+        <field name="Manufacturer">Everlight Elec</field>
+        <field name="Mfg part no.">17-21SURC/S530-A3/TR8</field>
+      </fields>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C48A7F4</tstamp>
@@ -571,6 +916,11 @@
       <value>LED_FAN</value>
       <footprint>projfp:LED_0805</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C72037</field>
+        <field name="Manufacturer">Everlight Elec</field>
+        <field name="Mfg part no.">17-21SURC/S530-A3/TR8</field>
+      </fields>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C48A8DE</tstamp>
@@ -579,6 +929,11 @@
       <value>FAN_CASE</value>
       <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C124375</field>
+        <field name="Manufacturer">Shenzhen Cankemeng</field>
+        <field name="Mfg part no.">C124375</field>
+      </fields>
       <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C4C8445</tstamp>
@@ -587,6 +942,11 @@
       <value>T_BED</value>
       <footprint>Connector_JST:JST_XH_B02B-XH-A_1x02_P2.50mm_Vertical</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C158012</field>
+        <field name="Manufacturer">JST Sales America</field>
+        <field name="Mfg part no.">B2B-XH-A(LF)(SN)</field>
+      </fields>
       <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C4A0A01</tstamp>
@@ -595,14 +955,24 @@
       <value>4.7K</value>
       <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C17673</field>
+        <field name="Manufacturer">Uniroyal Elec</field>
+        <field name="Mfg part no.">0805W8F4701T5E</field>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C4A0B19</tstamp>
     </comp>
     <comp ref="C5">
-      <value>10uF16V</value>
+      <value>22uF6.3V</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C5674</field>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="Mfg part no.">CL21A226MQQNNNE</field>
+      </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C4A0CB1</tstamp>
@@ -611,6 +981,11 @@
       <value>T_E0</value>
       <footprint>Connector_JST:JST_XH_B02B-XH-A_1x02_P2.50mm_Vertical</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C158012</field>
+        <field name="Manufacturer">JST Sales America</field>
+        <field name="Mfg part no.">B2B-XH-A(LF)(SN)</field>
+      </fields>
       <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C484853</tstamp>
@@ -619,14 +994,24 @@
       <value>4.7K</value>
       <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C17673</field>
+        <field name="Manufacturer">Uniroyal Elec</field>
+        <field name="Mfg part no.">0805W8F4701T5E</field>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C48485A</tstamp>
     </comp>
     <comp ref="C6">
-      <value>10uF16V</value>
+      <value>22uF6.3V</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C5674</field>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="Mfg part no.">CL21A226MQQNNNE</field>
+      </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C484861</tstamp>
@@ -635,6 +1020,11 @@
       <value>X_MIN</value>
       <footprint>Connector_JST:JST_XH_B03B-XH-A_1x03_P2.50mm_Vertical</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C144394</field>
+        <field name="Manufacturer">JST Sales America</field>
+        <field name="Mfg part no.">B3B-XH-A(LF)(SN)</field>
+      </fields>
       <libsource lib="Connector_Generic" part="Conn_01x03" description="Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C4920ED</tstamp>
@@ -643,14 +1033,24 @@
       <value>10K</value>
       <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C38522</field>
+        <field name="Manufacturer">Uniroyal Elec</field>
+        <field name="Mfg part no.">0805W8F2201T5E</field>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C492448</tstamp>
     </comp>
     <comp ref="C1">
-      <value>100nF16V</value>
+      <value>100nF25V</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C128353</field>
+        <field name="Manufacturer">Walsin Tech Corp</field>
+        <field name="Mfg part no.">0805B104K250</field>
+      </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C49257E</tstamp>
@@ -659,6 +1059,11 @@
       <value>Y_MIN</value>
       <footprint>Connector_JST:JST_XH_B03B-XH-A_1x03_P2.50mm_Vertical</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C144394</field>
+        <field name="Manufacturer">JST Sales America</field>
+        <field name="Mfg part no.">B3B-XH-A(LF)(SN)</field>
+      </fields>
       <libsource lib="Connector_Generic" part="Conn_01x03" description="Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C509A87</tstamp>
@@ -667,14 +1072,24 @@
       <value>10K</value>
       <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C38522</field>
+        <field name="Manufacturer">Uniroyal Elec</field>
+        <field name="Mfg part no.">0805W8F2201T5E</field>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C509A9A</tstamp>
     </comp>
     <comp ref="C3">
-      <value>100nF16V</value>
+      <value>100nF25V</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C128353</field>
+        <field name="Manufacturer">Walsin Tech Corp</field>
+        <field name="Mfg part no.">0805B104K250</field>
+      </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C509AA1</tstamp>
@@ -683,6 +1098,11 @@
       <value>Z_MIN</value>
       <footprint>Connector_JST:JST_XH_B03B-XH-A_1x03_P2.50mm_Vertical</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C144394</field>
+        <field name="Manufacturer">JST Sales America</field>
+        <field name="Mfg part no.">B3B-XH-A(LF)(SN)</field>
+      </fields>
       <libsource lib="Connector_Generic" part="Conn_01x03" description="Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C51082E</tstamp>
@@ -691,14 +1111,24 @@
       <value>10K</value>
       <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C38522</field>
+        <field name="Manufacturer">Uniroyal Elec</field>
+        <field name="Mfg part no.">0805W8F2201T5E</field>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C510841</tstamp>
     </comp>
     <comp ref="C2">
-      <value>100nF16V</value>
+      <value>100nF25V</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C128353</field>
+        <field name="Manufacturer">Walsin Tech Corp</field>
+        <field name="Mfg part no.">0805B104K250</field>
+      </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C510848</tstamp>
@@ -707,6 +1137,11 @@
       <value>Z_PROBE</value>
       <footprint>Connector_JST:JST_XH_B03B-XH-A_1x03_P2.50mm_Vertical</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C144394</field>
+        <field name="Manufacturer">JST Sales America</field>
+        <field name="Mfg part no.">B3B-XH-A(LF)(SN)</field>
+      </fields>
       <libsource lib="Connector_Generic" part="Conn_01x03" description="Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C51836F</tstamp>
@@ -715,6 +1150,11 @@
       <value>1N4148W</value>
       <footprint>projfp:D_SOD-123</footprint>
       <datasheet>https://www.vishay.com/docs/85748/1n4148w.pdf</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C81598</field>
+        <field name="Manufacturer">Semtech</field>
+        <field name="Mfg part no.">1N4148W</field>
+      </fields>
       <libsource lib="Diode" part="1N4148W" description="75V 0.15A Fast Switching Diode, SOD-123"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C520DE7</tstamp>
@@ -723,6 +1163,11 @@
       <value>12K</value>
       <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C17444</field>
+        <field name="Manufacturer">Uniroyal Elec</field>
+        <field name="Mfg part no.">0805W8F1202T5E</field>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C570C7E</tstamp>
@@ -730,6 +1175,11 @@
     <comp ref="SW1">
       <value>RESET</value>
       <footprint>projfp:6x6mmTactileSwitch</footprint>
+      <fields>
+        <field name="LCSC Part Number">C83206</field>
+        <field name="Manufacturer">Korean Hroparts Elec</field>
+        <field name="Mfg part no.">K2-6639SP-C4SC-04</field>
+      </fields>
       <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C59099E</tstamp>
@@ -738,6 +1188,11 @@
       <value>AUX1</value>
       <footprint>Connector_IDC:IDC-Header_2x04_P2.54mm_Vertical</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C9135</field>
+        <field name="Manufacturer">Boom Precision Elec</field>
+        <field name="Mfg part no.">C9135</field>
+      </fields>
       <libsource lib="Connector_Generic" part="Conn_02x04_Counter_Clockwise" description="Generic connector, double row, 02x04, counter clockwise pin numbering scheme (similar to DIP packge numbering), script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C6AAFFE</tstamp>
@@ -746,6 +1201,11 @@
       <value>I2C/SPI</value>
       <footprint>Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C124381</field>
+        <field name="Manufacturer">Shenzhen Cankemeng</field>
+        <field name="Mfg part no.">C124381</field>
+      </fields>
       <libsource lib="Connector_Generic" part="Conn_01x08" description="Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C6AB3DC</tstamp>
@@ -754,6 +1214,11 @@
       <value>4.7K</value>
       <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C17673</field>
+        <field name="Manufacturer">Uniroyal Elec</field>
+        <field name="Mfg part no.">0805W8F4701T5E</field>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C777F77</tstamp>
@@ -762,6 +1227,11 @@
       <value>4.7K</value>
       <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C17673</field>
+        <field name="Manufacturer">Uniroyal Elec</field>
+        <field name="Mfg part no.">0805W8F4701T5E</field>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C793708</tstamp>
@@ -802,6 +1272,11 @@
       <value>X_MS1</value>
       <footprint>Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C124376</field>
+        <field name="Manufacturer">Shenzhen Cankemeng</field>
+        <field name="Mfg part no.">C124376</field>
+      </fields>
       <libsource lib="Jumper" part="Jumper_3_Open" description="Jumper, 3-pole, both open"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C8F0AFD</tstamp>
@@ -810,6 +1285,11 @@
       <value>X_MS2</value>
       <footprint>Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C124376</field>
+        <field name="Manufacturer">Shenzhen Cankemeng</field>
+        <field name="Mfg part no.">C124376</field>
+      </fields>
       <libsource lib="Jumper" part="Jumper_3_Open" description="Jumper, 3-pole, both open"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C8F0C0D</tstamp>
@@ -818,6 +1298,11 @@
       <value>X_MS3</value>
       <footprint>Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C124376</field>
+        <field name="Manufacturer">Shenzhen Cankemeng</field>
+        <field name="Mfg part no.">C124376</field>
+      </fields>
       <libsource lib="Jumper" part="Jumper_3_Open" description="Jumper, 3-pole, both open"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C8F0D21</tstamp>
@@ -826,6 +1311,11 @@
       <value>X_RST</value>
       <footprint>Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C124376</field>
+        <field name="Manufacturer">Shenzhen Cankemeng</field>
+        <field name="Mfg part no.">C124376</field>
+      </fields>
       <libsource lib="Jumper" part="Jumper_3_Open" description="Jumper, 3-pole, both open"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C8F0E2B</tstamp>
@@ -834,6 +1324,11 @@
       <value>Y_MS1</value>
       <footprint>Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C124376</field>
+        <field name="Manufacturer">Shenzhen Cankemeng</field>
+        <field name="Mfg part no.">C124376</field>
+      </fields>
       <libsource lib="Jumper" part="Jumper_3_Open" description="Jumper, 3-pole, both open"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5CA217F2</tstamp>
@@ -842,6 +1337,11 @@
       <value>Y_MS2</value>
       <footprint>Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C124376</field>
+        <field name="Manufacturer">Shenzhen Cankemeng</field>
+        <field name="Mfg part no.">C124376</field>
+      </fields>
       <libsource lib="Jumper" part="Jumper_3_Open" description="Jumper, 3-pole, both open"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5CA217F9</tstamp>
@@ -850,6 +1350,11 @@
       <value>Y_MS3</value>
       <footprint>Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C124376</field>
+        <field name="Manufacturer">Shenzhen Cankemeng</field>
+        <field name="Mfg part no.">C124376</field>
+      </fields>
       <libsource lib="Jumper" part="Jumper_3_Open" description="Jumper, 3-pole, both open"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5CA21800</tstamp>
@@ -858,6 +1363,11 @@
       <value>Y_RST</value>
       <footprint>Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C124376</field>
+        <field name="Manufacturer">Shenzhen Cankemeng</field>
+        <field name="Mfg part no.">C124376</field>
+      </fields>
       <libsource lib="Jumper" part="Jumper_3_Open" description="Jumper, 3-pole, both open"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5CA21807</tstamp>
@@ -866,6 +1376,11 @@
       <value>Z_MS1</value>
       <footprint>Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C124376</field>
+        <field name="Manufacturer">Shenzhen Cankemeng</field>
+        <field name="Mfg part no.">C124376</field>
+      </fields>
       <libsource lib="Jumper" part="Jumper_3_Open" description="Jumper, 3-pole, both open"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5CA2E529</tstamp>
@@ -874,6 +1389,11 @@
       <value>Z_MS2</value>
       <footprint>Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C124376</field>
+        <field name="Manufacturer">Shenzhen Cankemeng</field>
+        <field name="Mfg part no.">C124376</field>
+      </fields>
       <libsource lib="Jumper" part="Jumper_3_Open" description="Jumper, 3-pole, both open"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5CA2E530</tstamp>
@@ -882,6 +1402,11 @@
       <value>Z_MS3</value>
       <footprint>Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C124376</field>
+        <field name="Manufacturer">Shenzhen Cankemeng</field>
+        <field name="Mfg part no.">C124376</field>
+      </fields>
       <libsource lib="Jumper" part="Jumper_3_Open" description="Jumper, 3-pole, both open"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5CA2E537</tstamp>
@@ -890,6 +1415,11 @@
       <value>Z_RST</value>
       <footprint>Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C124376</field>
+        <field name="Manufacturer">Shenzhen Cankemeng</field>
+        <field name="Mfg part no.">C124376</field>
+      </fields>
       <libsource lib="Jumper" part="Jumper_3_Open" description="Jumper, 3-pole, both open"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5CA2E53E</tstamp>
@@ -898,6 +1428,11 @@
       <value>E0_MS1</value>
       <footprint>Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C124376</field>
+        <field name="Manufacturer">Shenzhen Cankemeng</field>
+        <field name="Mfg part no.">C124376</field>
+      </fields>
       <libsource lib="Jumper" part="Jumper_3_Open" description="Jumper, 3-pole, both open"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5CA3CBBB</tstamp>
@@ -906,6 +1441,11 @@
       <value>E0_MS2</value>
       <footprint>Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C124376</field>
+        <field name="Manufacturer">Shenzhen Cankemeng</field>
+        <field name="Mfg part no.">C124376</field>
+      </fields>
       <libsource lib="Jumper" part="Jumper_3_Open" description="Jumper, 3-pole, both open"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5CA3CBC2</tstamp>
@@ -914,6 +1454,11 @@
       <value>E0_MS3</value>
       <footprint>Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C124376</field>
+        <field name="Manufacturer">Shenzhen Cankemeng</field>
+        <field name="Mfg part no.">C124376</field>
+      </fields>
       <libsource lib="Jumper" part="Jumper_3_Open" description="Jumper, 3-pole, both open"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5CA3CBC9</tstamp>
@@ -922,6 +1467,11 @@
       <value>E0_RST</value>
       <footprint>Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C124376</field>
+        <field name="Manufacturer">Shenzhen Cankemeng</field>
+        <field name="Mfg part no.">C124376</field>
+      </fields>
       <libsource lib="Jumper" part="Jumper_3_Open" description="Jumper, 3-pole, both open"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5CA3CBD0</tstamp>
@@ -930,6 +1480,11 @@
       <value>CH340C</value>
       <footprint>Package_SO:SOIC-16_3.9x9.9mm_P1.27mm</footprint>
       <datasheet>http://www.datasheet5.com/pdf-local-2195953</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C84681</field>
+        <field name="Manufacturer">Jiangsu Qin Heng</field>
+        <field name="Mfg part no.">CH340C</field>
+      </fields>
       <libsource lib="MRR_ESPA-rescue" part="CH340C-projsym" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5CD9974F</tstamp>
@@ -937,14 +1492,24 @@
     <comp ref="J4">
       <value>Micro_SD_Card_China</value>
       <footprint>projfp:Conn_uSDcard</footprint>
+      <fields>
+        <field name="LCSC Part Number">C111196</field>
+        <field name="Manufacturer">SOFNG</field>
+        <field name="Mfg part no.">TF-15×15</field>
+      </fields>
       <libsource lib="MRR_ESPA-rescue" part="Micro_SD_Card_China-projsym" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C4D8050</tstamp>
     </comp>
     <comp ref="C19">
-      <value>100uF10V</value>
+      <value>100uF6.3V</value>
       <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C15008</field>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="Mfg part no.">CL31A107MQHNNNE</field>
+      </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C4E50E7</tstamp>
@@ -953,6 +1518,11 @@
       <value>1K</value>
       <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C17513</field>
+        <field name="Manufacturer">Uniroyal Elec</field>
+        <field name="Mfg part no.">0805W8F1001T5E</field>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C5082F1</tstamp>
@@ -961,6 +1531,11 @@
       <value>1K</value>
       <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C17513</field>
+        <field name="Manufacturer">Uniroyal Elec</field>
+        <field name="Mfg part no.">0805W8F1001T5E</field>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C508469</tstamp>
@@ -969,6 +1544,11 @@
       <value>TLP182</value>
       <footprint>Package_SO:MFSOP6-4_4.4x3.6mm_P1.27mm</footprint>
       <datasheet>https://toshiba.semicon-storage.com/info/docget.jsp?did=11793&amp;prodName=TLP184</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C96457</field>
+        <field name="Manufacturer">TOSHIBA</field>
+        <field name="Mfg part no.">TLP182(GB-TPL,E</field>
+      </fields>
       <libsource lib="Isolator" part="TLP184" description="AC/DC Optocoupler, Vce 80V, CTR 50-100%, MFSOP6"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C528EB5</tstamp>
@@ -977,6 +1557,11 @@
       <value>74LVC1G125</value>
       <footprint>Package_TO_SOT_SMD:SOT-353_SC-70-5</footprint>
       <datasheet>http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C12519</field>
+        <field name="Manufacturer">Nexperia</field>
+        <field name="Mfg part no.">74LVC1G125GW,125</field>
+      </fields>
       <libsource lib="74xGxx" part="74LVC1G125" description="Single Buffer Gate Tri-State, Low-Voltage CMOS"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C5292FC</tstamp>
@@ -985,6 +1570,11 @@
       <value>74LVC1G125</value>
       <footprint>Package_TO_SOT_SMD:SOT-353_SC-70-5</footprint>
       <datasheet>http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C12519</field>
+        <field name="Manufacturer">Nexperia</field>
+        <field name="Mfg part no.">74LVC1G125GW,125</field>
+      </fields>
       <libsource lib="74xGxx" part="74LVC1G125" description="Single Buffer Gate Tri-State, Low-Voltage CMOS"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C5A87BC</tstamp>
@@ -993,22 +1583,37 @@
       <value>330R</value>
       <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C17630</field>
+        <field name="Manufacturer">Uniroyal Elec</field>
+        <field name="Mfg part no.">0805W8F3300T5E</field>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C6342BE</tstamp>
     </comp>
     <comp ref="D14">
-      <value>1N5819</value>
+      <value>1N5819W</value>
       <footprint>Diode_SMD:D_SOD-123</footprint>
       <datasheet>http://www.vishay.com/docs/88525/1n5817.pdf</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C169540</field>
+        <field name="Manufacturer">Shandong Jingdao Microelectronics</field>
+        <field name="Mfg part no.">1N5819W</field>
+      </fields>
       <libsource lib="Diode" part="1N5819" description="40V 1A Schottky Barrier Rectifier Diode, DO-41"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C5AA3CF</tstamp>
     </comp>
     <comp ref="D15">
-      <value>1N5819</value>
+      <value>1N5819W</value>
       <footprint>Diode_SMD:D_SOD-123</footprint>
       <datasheet>http://www.vishay.com/docs/88525/1n5817.pdf</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C169540</field>
+        <field name="Manufacturer">Shandong Jingdao Microelectronics</field>
+        <field name="Mfg part no.">1N5819W</field>
+      </fields>
       <libsource lib="Diode" part="1N5819" description="40V 1A Schottky Barrier Rectifier Diode, DO-41"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C686D43</tstamp>
@@ -1017,22 +1622,24 @@
       <value>CS_PINS</value>
       <footprint>Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C124378</field>
+        <field name="Manufacturer">Shenzhen Cankemeng</field>
+        <field name="Mfg part no.">C124378</field>
+      </fields>
       <libsource lib="Connector_Generic" part="Conn_01x04" description="Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5D2CF705</tstamp>
-    </comp>
-    <comp ref="JP17">
-      <value>VUSB_EN</value>
-      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
-      <datasheet>~</datasheet>
-      <libsource lib="Device" part="Jumper" description="Jumper, normally closed"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5D220641</tstamp>
     </comp>
     <comp ref="R1">
       <value>10K</value>
       <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C38522</field>
+        <field name="Manufacturer">Uniroyal Elec</field>
+        <field name="Mfg part no.">0805W8F2201T5E</field>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5D27E7A8</tstamp>
@@ -1041,9 +1648,40 @@
       <value>PWR_SEL</value>
       <footprint>Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C124376</field>
+        <field name="Manufacturer">Shenzhen Cankemeng</field>
+        <field name="Mfg part no.">C124376</field>
+      </fields>
       <libsource lib="Jumper" part="Jumper_3_Open" description="Jumper, 3-pole, both open"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5D2E09E5</tstamp>
+    </comp>
+    <comp ref="JP17">
+      <value>5V_SEL</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C124376</field>
+        <field name="Manufacturer">Shenzhen Cankemeng</field>
+        <field name="Mfg part no.">C124376</field>
+      </fields>
+      <libsource lib="Jumper" part="Jumper_3_Open" description="Jumper, 3-pole, both open"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D6D1FC7</tstamp>
+    </comp>
+    <comp ref="C28">
+      <value>100nF25V</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C128353</field>
+        <field name="Manufacturer">Walsin Tech Corp</field>
+        <field name="Mfg part no.">0805B104K250</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D6DC29F</tstamp>
     </comp>
   </components>
   <libparts>
@@ -1284,18 +1922,6 @@
       <pins>
         <pin num="1" name="~" type="passive"/>
         <pin num="2" name="~" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="Device" part="Jumper">
-      <description>Jumper, normally closed</description>
-      <docs>~</docs>
-      <fields>
-        <field name="Reference">JP</field>
-        <field name="Value">Jumper</field>
-      </fields>
-      <pins>
-        <pin num="1" name="1" type="passive"/>
-        <pin num="2" name="2" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Device" part="L">
@@ -1753,171 +2379,171 @@
   </libraries>
   <nets>
     <net code="1" name="+3V3">
-      <node ref="J2" pin="1"/>
-      <node ref="J14" pin="1"/>
-      <node ref="R15" pin="1"/>
+      <node ref="J1" pin="1"/>
+      <node ref="U4" pin="2"/>
+      <node ref="C14" pin="1"/>
       <node ref="JP12" pin="1"/>
       <node ref="JP8" pin="1"/>
-      <node ref="U6" pin="10"/>
       <node ref="JP4" pin="1"/>
-      <node ref="J5" pin="1"/>
-      <node ref="R8" pin="2"/>
-      <node ref="R16" pin="1"/>
+      <node ref="R32" pin="1"/>
+      <node ref="U3" pin="16"/>
+      <node ref="R1" pin="2"/>
+      <node ref="R28" pin="2"/>
       <node ref="U8" pin="10"/>
-      <node ref="U1" pin="2"/>
-      <node ref="JP11" pin="1"/>
-      <node ref="JP7" pin="1"/>
-      <node ref="R3" pin="2"/>
+      <node ref="U5" pin="10"/>
       <node ref="JP3" pin="1"/>
+      <node ref="JP11" pin="1"/>
       <node ref="U9" pin="10"/>
       <node ref="R17" pin="1"/>
-      <node ref="U5" pin="10"/>
-      <node ref="R32" pin="1"/>
-      <node ref="J1" pin="1"/>
+      <node ref="R3" pin="2"/>
+      <node ref="JP7" pin="1"/>
+      <node ref="C19" pin="1"/>
       <node ref="JP10" pin="1"/>
       <node ref="JP6" pin="1"/>
       <node ref="JP2" pin="1"/>
-      <node ref="R1" pin="2"/>
-      <node ref="C19" pin="1"/>
       <node ref="J4" pin="4"/>
-      <node ref="U3" pin="4"/>
-      <node ref="U3" pin="16"/>
-      <node ref="JP1" pin="1"/>
-      <node ref="JP9" pin="1"/>
-      <node ref="JP5" pin="1"/>
+      <node ref="J2" pin="1"/>
       <node ref="C11" pin="2"/>
       <node ref="R4" pin="2"/>
+      <node ref="R8" pin="2"/>
+      <node ref="U1" pin="2"/>
+      <node ref="J5" pin="1"/>
+      <node ref="JP9" pin="1"/>
+      <node ref="JP5" pin="1"/>
+      <node ref="U6" pin="10"/>
+      <node ref="J14" pin="1"/>
+      <node ref="JP1" pin="1"/>
+      <node ref="R16" pin="1"/>
       <node ref="R20" pin="2"/>
+      <node ref="R15" pin="1"/>
       <node ref="R19" pin="2"/>
-      <node ref="C14" pin="1"/>
-      <node ref="U4" pin="2"/>
-      <node ref="R28" pin="2"/>
+      <node ref="U3" pin="4"/>
     </net>
-    <net code="2" name="X_MS3">
+    <net code="2" name="X_MS2">
+      <node ref="U5" pin="3"/>
+      <node ref="JP5" pin="2"/>
+    </net>
+    <net code="3" name="X_MS3">
       <node ref="U5" pin="4"/>
       <node ref="JP9" pin="2"/>
     </net>
-    <net code="3" name="X_RST">
-      <node ref="JP13" pin="2"/>
+    <net code="4" name="X_RST">
       <node ref="U5" pin="5"/>
+      <node ref="JP13" pin="2"/>
     </net>
-    <net code="4" name="X_SLP">
+    <net code="5" name="X_SLP">
       <node ref="JP13" pin="3"/>
       <node ref="U5" pin="6"/>
-    </net>
-    <net code="5" name="X_MS2">
-      <node ref="U5" pin="3"/>
-      <node ref="JP5" pin="2"/>
     </net>
     <net code="6" name="X_MS1">
       <node ref="U5" pin="2"/>
       <node ref="JP1" pin="2"/>
     </net>
     <net code="7" name="Y_MS3">
-      <node ref="U8" pin="4"/>
       <node ref="JP10" pin="2"/>
+      <node ref="U8" pin="4"/>
     </net>
     <net code="8" name="Y_MS2">
       <node ref="JP6" pin="2"/>
       <node ref="U8" pin="3"/>
     </net>
     <net code="9" name="Y_MS1">
-      <node ref="JP2" pin="2"/>
       <node ref="U8" pin="2"/>
+      <node ref="JP2" pin="2"/>
     </net>
-    <net code="10" name="SCL">
-      <node ref="U1" pin="36"/>
-      <node ref="R20" pin="1"/>
-      <node ref="J14" pin="3"/>
-    </net>
-    <net code="11" name="SDA">
+    <net code="10" name="SDA">
+      <node ref="R19" pin="1"/>
       <node ref="U1" pin="33"/>
       <node ref="J14" pin="4"/>
-      <node ref="R19" pin="1"/>
+    </net>
+    <net code="11" name="SCL">
+      <node ref="J14" pin="3"/>
+      <node ref="U1" pin="36"/>
+      <node ref="R20" pin="1"/>
     </net>
     <net code="12" name="GND">
-      <node ref="U12" pin="1"/>
-      <node ref="U11" pin="3"/>
-      <node ref="R14" pin="1"/>
+      <node ref="C9" pin="2"/>
+      <node ref="U12" pin="3"/>
+      <node ref="R18" pin="1"/>
+      <node ref="C12" pin="1"/>
+      <node ref="R25" pin="2"/>
+      <node ref="D8" pin="2"/>
+      <node ref="D11" pin="1"/>
+      <node ref="D12" pin="1"/>
+      <node ref="C19" pin="2"/>
       <node ref="J16" pin="5"/>
       <node ref="J16" pin="6"/>
       <node ref="D7" pin="2"/>
-      <node ref="D8" pin="2"/>
       <node ref="C11" pin="1"/>
       <node ref="J4" pin="6"/>
-      <node ref="C12" pin="1"/>
-      <node ref="U3" pin="1"/>
       <node ref="C8" pin="2"/>
-      <node ref="U12" pin="3"/>
-      <node ref="R18" pin="1"/>
-      <node ref="C9" pin="2"/>
-      <node ref="R25" pin="2"/>
-      <node ref="U1" pin="1"/>
-      <node ref="C18" pin="2"/>
-      <node ref="C19" pin="2"/>
-      <node ref="U11" pin="1"/>
-      <node ref="U10" pin="3"/>
-      <node ref="D10" pin="1"/>
       <node ref="U4" pin="1"/>
+      <node ref="U11" pin="1"/>
       <node ref="C14" pin="2"/>
+      <node ref="U11" pin="3"/>
       <node ref="C13" pin="2"/>
-      <node ref="J15" pin="3"/>
-      <node ref="U6" pin="9"/>
-      <node ref="C5" pin="1"/>
-      <node ref="C15" pin="2"/>
-      <node ref="J12" pin="2"/>
-      <node ref="J8" pin="2"/>
-      <node ref="Q2" pin="3"/>
-      <node ref="R11" pin="1"/>
-      <node ref="U6" pin="15"/>
-      <node ref="D5" pin="2"/>
-      <node ref="SW1" pin="1"/>
-      <node ref="J15" pin="4"/>
+      <node ref="U10" pin="3"/>
+      <node ref="C28" pin="2"/>
+      <node ref="U3" pin="1"/>
+      <node ref="U12" pin="1"/>
+      <node ref="D10" pin="1"/>
       <node ref="C1" pin="1"/>
-      <node ref="J11" pin="2"/>
-      <node ref="J1" pin="2"/>
+      <node ref="J13" pin="2"/>
+      <node ref="C18" pin="2"/>
+      <node ref="C6" pin="1"/>
+      <node ref="C17" pin="2"/>
+      <node ref="C5" pin="1"/>
+      <node ref="U5" pin="15"/>
       <node ref="U5" pin="9"/>
+      <node ref="J1" pin="2"/>
+      <node ref="R11" pin="1"/>
+      <node ref="R14" pin="1"/>
+      <node ref="Q2" pin="3"/>
+      <node ref="U8" pin="9"/>
+      <node ref="U8" pin="15"/>
+      <node ref="J11" pin="2"/>
+      <node ref="C16" pin="2"/>
+      <node ref="U6" pin="9"/>
       <node ref="U9" pin="9"/>
       <node ref="U9" pin="15"/>
       <node ref="Q3" pin="3"/>
-      <node ref="U5" pin="15"/>
-      <node ref="J5" pin="2"/>
-      <node ref="J6" pin="2"/>
-      <node ref="U8" pin="9"/>
-      <node ref="C2" pin="1"/>
-      <node ref="D11" pin="1"/>
-      <node ref="D12" pin="1"/>
-      <node ref="U2" pin="7"/>
-      <node ref="J9" pin="2"/>
-      <node ref="C16" pin="2"/>
-      <node ref="C17" pin="2"/>
-      <node ref="D9" pin="2"/>
-      <node ref="C6" pin="1"/>
-      <node ref="J14" pin="2"/>
-      <node ref="U2" pin="9"/>
-      <node ref="C7" pin="1"/>
-      <node ref="C4" pin="2"/>
       <node ref="U1" pin="38"/>
-      <node ref="J2" pin="2"/>
+      <node ref="J5" pin="2"/>
       <node ref="U1" pin="15"/>
-      <node ref="J13" pin="2"/>
-      <node ref="U8" pin="15"/>
+      <node ref="J6" pin="2"/>
       <node ref="C3" pin="1"/>
+      <node ref="J2" pin="2"/>
+      <node ref="C4" pin="2"/>
+      <node ref="C7" pin="1"/>
+      <node ref="U2" pin="9"/>
+      <node ref="U2" pin="7"/>
+      <node ref="J14" pin="2"/>
+      <node ref="D9" pin="2"/>
+      <node ref="C2" pin="1"/>
+      <node ref="J8" pin="2"/>
+      <node ref="D5" pin="2"/>
+      <node ref="J15" pin="3"/>
+      <node ref="J15" pin="4"/>
+      <node ref="U6" pin="15"/>
+      <node ref="U1" pin="1"/>
+      <node ref="J12" pin="2"/>
+      <node ref="C15" pin="2"/>
+      <node ref="J9" pin="2"/>
+      <node ref="SW1" pin="1"/>
     </net>
     <net code="13" name="+5V">
       <node ref="C13" pin="1"/>
       <node ref="R29" pin="2"/>
       <node ref="U4" pin="3"/>
-      <node ref="U12" pin="5"/>
-      <node ref="U11" pin="5"/>
-      <node ref="D15" pin="1"/>
-      <node ref="D14" pin="1"/>
+      <node ref="JP17" pin="2"/>
       <node ref="J15" pin="1"/>
       <node ref="J15" pin="2"/>
+      <node ref="U12" pin="5"/>
+      <node ref="U11" pin="5"/>
     </net>
-    <net code="14" name="Z_RST">
-      <node ref="U6" pin="5"/>
-      <node ref="JP15" pin="2"/>
+    <net code="14" name="Z_MS3">
+      <node ref="U6" pin="4"/>
+      <node ref="JP11" pin="2"/>
     </net>
     <net code="15" name="Z_MS1">
       <node ref="JP3" pin="2"/>
@@ -1927,531 +2553,536 @@
       <node ref="U6" pin="3"/>
       <node ref="JP7" pin="2"/>
     </net>
-    <net code="17" name="Z_MS3">
-      <node ref="U6" pin="4"/>
-      <node ref="JP11" pin="2"/>
+    <net code="17" name="Z_RST">
+      <node ref="JP15" pin="2"/>
+      <node ref="U6" pin="5"/>
     </net>
     <net code="18" name="Z_SLP">
-      <node ref="JP15" pin="3"/>
       <node ref="U6" pin="6"/>
+      <node ref="JP15" pin="3"/>
     </net>
-    <net code="19" name="E0_RST">
-      <node ref="U9" pin="5"/>
-      <node ref="JP16" pin="2"/>
-    </net>
-    <net code="20" name="E0_MS3">
-      <node ref="JP12" pin="2"/>
+    <net code="19" name="E0_MS3">
       <node ref="U9" pin="4"/>
+      <node ref="JP12" pin="2"/>
+    </net>
+    <net code="20" name="E0_RST">
+      <node ref="JP16" pin="2"/>
+      <node ref="U9" pin="5"/>
     </net>
     <net code="21" name="E0_MS2">
-      <node ref="U9" pin="3"/>
       <node ref="JP8" pin="2"/>
+      <node ref="U9" pin="3"/>
     </net>
     <net code="22" name="E0_MS1">
-      <node ref="JP4" pin="2"/>
       <node ref="U9" pin="2"/>
+      <node ref="JP4" pin="2"/>
     </net>
     <net code="23" name="Y_SLP">
       <node ref="U8" pin="6"/>
       <node ref="JP14" pin="3"/>
     </net>
     <net code="24" name="Y_RST">
-      <node ref="JP14" pin="2"/>
       <node ref="U8" pin="5"/>
+      <node ref="JP14" pin="2"/>
     </net>
     <net code="25" name="TEMP_E0_PIN">
-      <node ref="R17" pin="2"/>
       <node ref="U1" pin="4"/>
-      <node ref="C6" pin="2"/>
       <node ref="J13" pin="1"/>
+      <node ref="R17" pin="2"/>
+      <node ref="C6" pin="2"/>
     </net>
     <net code="26" name="TEMP_BED_PIN">
-      <node ref="R16" pin="2"/>
-      <node ref="J12" pin="1"/>
       <node ref="U1" pin="5"/>
+      <node ref="J12" pin="1"/>
+      <node ref="R16" pin="2"/>
       <node ref="C5" pin="2"/>
     </net>
     <net code="27" name="X_MIN">
-      <node ref="J1" pin="3"/>
       <node ref="C1" pin="2"/>
+      <node ref="J1" pin="3"/>
       <node ref="R3" pin="1"/>
       <node ref="U1" pin="6"/>
     </net>
-    <net code="28" name="Net-(J24-Pad4)">
-      <node ref="J24" pin="4"/>
-      <node ref="U9" pin="11"/>
-    </net>
-    <net code="29" name="Z_1A">
-      <node ref="J22" pin="7"/>
-      <node ref="U6" pin="11"/>
-      <node ref="J22" pin="8"/>
-    </net>
-    <net code="30" name="Z_1B">
-      <node ref="U6" pin="12"/>
-      <node ref="J22" pin="5"/>
-      <node ref="J22" pin="6"/>
-    </net>
-    <net code="31" name="Z_2B">
-      <node ref="U6" pin="14"/>
+    <net code="28" name="Z_2B">
       <node ref="J22" pin="1"/>
       <node ref="J22" pin="2"/>
+      <node ref="U6" pin="14"/>
     </net>
-    <net code="32" name="Net-(J24-Pad3)">
-      <node ref="U9" pin="12"/>
+    <net code="29" name="Z_1A">
+      <node ref="J22" pin="8"/>
+      <node ref="J22" pin="7"/>
+      <node ref="U6" pin="11"/>
+    </net>
+    <net code="30" name="Z_1B">
+      <node ref="J22" pin="5"/>
+      <node ref="J22" pin="6"/>
+      <node ref="U6" pin="12"/>
+    </net>
+    <net code="31" name="Z_2A">
+      <node ref="U6" pin="13"/>
+      <node ref="J22" pin="4"/>
+      <node ref="J22" pin="3"/>
+    </net>
+    <net code="32" name="Net-(J24-Pad4)">
+      <node ref="U9" pin="11"/>
+      <node ref="J24" pin="4"/>
+    </net>
+    <net code="33" name="Net-(J24-Pad3)">
       <node ref="J24" pin="3"/>
+      <node ref="U9" pin="12"/>
     </net>
-    <net code="33" name="Net-(J24-Pad2)">
-      <node ref="J24" pin="2"/>
+    <net code="34" name="Net-(J24-Pad2)">
       <node ref="U9" pin="13"/>
+      <node ref="J24" pin="2"/>
     </net>
-    <net code="34" name="Net-(J24-Pad1)">
+    <net code="35" name="Net-(J24-Pad1)">
       <node ref="U9" pin="14"/>
       <node ref="J24" pin="1"/>
     </net>
-    <net code="35" name="Net-(J23-Pad4)">
-      <node ref="U8" pin="11"/>
+    <net code="36" name="Net-(J23-Pad4)">
       <node ref="J23" pin="4"/>
+      <node ref="U8" pin="11"/>
     </net>
-    <net code="36" name="Net-(J23-Pad3)">
-      <node ref="U8" pin="12"/>
+    <net code="37" name="Net-(J23-Pad3)">
       <node ref="J23" pin="3"/>
+      <node ref="U8" pin="12"/>
     </net>
-    <net code="37" name="Net-(J23-Pad2)">
-      <node ref="U8" pin="13"/>
+    <net code="38" name="Net-(J23-Pad2)">
       <node ref="J23" pin="2"/>
+      <node ref="U8" pin="13"/>
     </net>
-    <net code="38" name="Net-(J23-Pad1)">
-      <node ref="U8" pin="14"/>
+    <net code="39" name="Net-(J23-Pad1)">
       <node ref="J23" pin="1"/>
+      <node ref="U8" pin="14"/>
     </net>
-    <net code="39" name="Net-(D6-Pad2)">
+    <net code="40" name="Net-(D6-Pad2)">
       <node ref="D6" pin="2"/>
       <node ref="R12" pin="1"/>
     </net>
-    <net code="40" name="EN">
-      <node ref="R15" pin="2"/>
-      <node ref="U1" pin="3"/>
+    <net code="41" name="EN">
       <node ref="Q4" pin="3"/>
       <node ref="SW1" pin="2"/>
+      <node ref="C28" pin="1"/>
+      <node ref="U1" pin="3"/>
+      <node ref="R15" pin="2"/>
     </net>
-    <net code="41" name="MOSI">
-      <node ref="JP4" pin="3"/>
-      <node ref="JP3" pin="3"/>
-      <node ref="JP2" pin="3"/>
-      <node ref="J14" pin="5"/>
-      <node ref="U1" pin="37"/>
-      <node ref="J4" pin="3"/>
-      <node ref="JP1" pin="3"/>
-    </net>
-    <net code="42" name="IO0">
-      <node ref="J14" pin="8"/>
-      <node ref="R1" pin="1"/>
-      <node ref="U1" pin="25"/>
-      <node ref="Q5" pin="3"/>
-    </net>
-    <net code="43" name="SCK">
-      <node ref="U1" pin="30"/>
-      <node ref="JP5" pin="3"/>
-      <node ref="JP8" pin="3"/>
-      <node ref="J4" pin="5"/>
-      <node ref="JP6" pin="3"/>
-      <node ref="J14" pin="7"/>
-      <node ref="JP7" pin="3"/>
-    </net>
-    <net code="44" name="MISO">
-      <node ref="JP16" pin="1"/>
-      <node ref="JP13" pin="1"/>
-      <node ref="JP14" pin="1"/>
-      <node ref="U1" pin="31"/>
-      <node ref="JP15" pin="1"/>
-      <node ref="J4" pin="7"/>
-      <node ref="J14" pin="6"/>
-    </net>
-    <net code="45" name="UART-">
-      <node ref="J15" pin="8"/>
-      <node ref="U1" pin="34"/>
-      <node ref="R26" pin="1"/>
-    </net>
-    <net code="46" name="Net-(J15-Pad7)">
-      <node ref="J15" pin="7"/>
-    </net>
-    <net code="47" name="UART+">
-      <node ref="J15" pin="6"/>
-      <node ref="U1" pin="35"/>
-      <node ref="R27" pin="1"/>
-    </net>
-    <net code="48" name="Net-(J15-Pad5)">
+    <net code="42" name="Net-(J15-Pad5)">
       <node ref="J15" pin="5"/>
     </net>
-    <net code="49" name="Y_MIN">
-      <node ref="U1" pin="7"/>
-      <node ref="C3" pin="2"/>
+    <net code="43" name="MISO">
+      <node ref="JP16" pin="1"/>
+      <node ref="JP13" pin="1"/>
+      <node ref="J4" pin="7"/>
+      <node ref="J14" pin="6"/>
+      <node ref="JP15" pin="1"/>
+      <node ref="U1" pin="31"/>
+      <node ref="JP14" pin="1"/>
+    </net>
+    <net code="44" name="IO0">
+      <node ref="Q5" pin="3"/>
+      <node ref="J14" pin="8"/>
+      <node ref="U1" pin="25"/>
+      <node ref="R1" pin="1"/>
+    </net>
+    <net code="45" name="SCK">
+      <node ref="J4" pin="5"/>
+      <node ref="J14" pin="7"/>
+      <node ref="JP7" pin="3"/>
+      <node ref="JP6" pin="3"/>
+      <node ref="JP8" pin="3"/>
+      <node ref="JP5" pin="3"/>
+      <node ref="U1" pin="30"/>
+    </net>
+    <net code="46" name="MOSI">
+      <node ref="J4" pin="3"/>
+      <node ref="JP3" pin="3"/>
+      <node ref="J14" pin="5"/>
+      <node ref="U1" pin="37"/>
+      <node ref="JP1" pin="3"/>
+      <node ref="JP4" pin="3"/>
+      <node ref="JP2" pin="3"/>
+    </net>
+    <net code="47" name="UART-">
+      <node ref="U1" pin="34"/>
+      <node ref="J15" pin="8"/>
+      <node ref="R26" pin="1"/>
+    </net>
+    <net code="48" name="Net-(J15-Pad7)">
+      <node ref="J15" pin="7"/>
+    </net>
+    <net code="49" name="UART+">
+      <node ref="J15" pin="6"/>
+      <node ref="R27" pin="1"/>
+      <node ref="U1" pin="35"/>
+    </net>
+    <net code="50" name="Y_MIN">
       <node ref="J5" pin="3"/>
+      <node ref="C3" pin="2"/>
       <node ref="R8" pin="1"/>
+      <node ref="U1" pin="7"/>
     </net>
-    <net code="50" name="Z_MIN">
-      <node ref="J2" pin="3"/>
-      <node ref="C2" pin="2"/>
-      <node ref="R4" pin="1"/>
-      <node ref="U1" pin="23"/>
-      <node ref="D2" pin="2"/>
-    </net>
-    <net code="51" name="Net-(D2-Pad1)">
-      <node ref="J6" pin="3"/>
-      <node ref="D2" pin="1"/>
-    </net>
-    <net code="52" name="VIN">
-      <node ref="C4" pin="1"/>
-      <node ref="C7" pin="2"/>
-      <node ref="C15" pin="1"/>
-      <node ref="U9" pin="16"/>
-      <node ref="C18" pin="1"/>
-      <node ref="J8" pin="1"/>
-      <node ref="U2" pin="2"/>
-      <node ref="J7" pin="1"/>
-      <node ref="R9" pin="2"/>
-      <node ref="F1" pin="1"/>
-      <node ref="C17" pin="1"/>
-      <node ref="R12" pin="2"/>
-      <node ref="U6" pin="16"/>
-      <node ref="C16" pin="1"/>
-      <node ref="U8" pin="16"/>
-      <node ref="J6" pin="1"/>
+    <net code="51" name="VIN">
       <node ref="U5" pin="16"/>
       <node ref="J11" pin="1"/>
-      <node ref="R30" pin="2"/>
+      <node ref="U8" pin="16"/>
+      <node ref="J6" pin="1"/>
+      <node ref="C7" pin="2"/>
+      <node ref="U2" pin="2"/>
+      <node ref="C18" pin="1"/>
+      <node ref="F1" pin="1"/>
+      <node ref="C17" pin="1"/>
+      <node ref="C4" pin="1"/>
+      <node ref="C16" pin="1"/>
+      <node ref="U6" pin="16"/>
+      <node ref="J7" pin="1"/>
+      <node ref="U9" pin="16"/>
       <node ref="D5" pin="1"/>
+      <node ref="R30" pin="2"/>
       <node ref="J10" pin="1"/>
+      <node ref="R12" pin="2"/>
+      <node ref="C15" pin="1"/>
+      <node ref="R9" pin="2"/>
+      <node ref="J8" pin="1"/>
     </net>
-    <net code="53" name="Net-(R36-Pad2)">
-      <node ref="U10" pin="1"/>
+    <net code="52" name="Z_MIN">
+      <node ref="J2" pin="3"/>
+      <node ref="D2" pin="2"/>
+      <node ref="U1" pin="23"/>
+      <node ref="C2" pin="2"/>
+      <node ref="R4" pin="1"/>
+    </net>
+    <net code="53" name="Net-(D2-Pad1)">
+      <node ref="D2" pin="1"/>
+      <node ref="J6" pin="3"/>
+    </net>
+    <net code="54" name="Net-(R36-Pad2)">
       <node ref="R36" pin="2"/>
-    </net>
-    <net code="54" name="VBED">
-      <node ref="D4" pin="1"/>
-      <node ref="F2" pin="1"/>
-      <node ref="R31" pin="2"/>
-      <node ref="U10" pin="6"/>
-      <node ref="R5" pin="2"/>
-      <node ref="J3" pin="1"/>
+      <node ref="U10" pin="1"/>
     </net>
     <net code="55" name="GNDD">
-      <node ref="D4" pin="2"/>
-      <node ref="J9" pin="3"/>
-      <node ref="D13" pin="1"/>
-      <node ref="Q1" pin="3"/>
       <node ref="R35" pin="1"/>
+      <node ref="Q1" pin="3"/>
+      <node ref="D4" pin="2"/>
+      <node ref="D13" pin="1"/>
+      <node ref="J9" pin="3"/>
     </net>
-    <net code="56" name="Net-(D15-Pad2)">
+    <net code="56" name="VBED">
+      <node ref="F2" pin="1"/>
+      <node ref="U10" pin="6"/>
+      <node ref="D4" pin="1"/>
+      <node ref="J3" pin="1"/>
+      <node ref="R31" pin="2"/>
+      <node ref="R5" pin="2"/>
+    </net>
+    <net code="57" name="Net-(D15-Pad1)">
+      <node ref="D15" pin="1"/>
+      <node ref="JP17" pin="3"/>
+    </net>
+    <net code="58" name="Net-(D14-Pad1)">
+      <node ref="D14" pin="1"/>
       <node ref="JP17" pin="1"/>
-      <node ref="D15" pin="2"/>
     </net>
-    <net code="57" name="E0_CS">
+    <net code="59" name="Net-(JP18-Pad1)">
+      <node ref="R38" pin="2"/>
+      <node ref="U10" pin="4"/>
+      <node ref="JP18" pin="1"/>
+    </net>
+    <net code="60" name="E0_CS">
       <node ref="J17" pin="4"/>
       <node ref="JP12" pin="3"/>
     </net>
-    <net code="58" name="Z_CS">
-      <node ref="J17" pin="3"/>
-      <node ref="JP11" pin="3"/>
-    </net>
-    <net code="59" name="Y_CS">
-      <node ref="JP10" pin="3"/>
-      <node ref="J17" pin="2"/>
-    </net>
-    <net code="60" name="X_CS">
-      <node ref="JP9" pin="3"/>
-      <node ref="J17" pin="1"/>
-    </net>
-    <net code="61" name="Net-(JP18-Pad1)">
-      <node ref="R38" pin="2"/>
-      <node ref="JP18" pin="1"/>
-      <node ref="U10" pin="4"/>
-    </net>
-    <net code="62" name="Net-(JP18-Pad3)">
-      <node ref="JP18" pin="3"/>
-      <node ref="R35" pin="2"/>
+    <net code="61" name="Net-(JP18-Pad3)">
       <node ref="R38" pin="1"/>
+      <node ref="R35" pin="2"/>
+      <node ref="JP18" pin="3"/>
     </net>
-    <net code="63" name="TO_HEATER_BED">
+    <net code="62" name="TO_HEATER_BED">
       <node ref="JP18" pin="2"/>
       <node ref="Q1" pin="1"/>
     </net>
-    <net code="64" name="Net-(U3-Pad15)">
+    <net code="63" name="Z_CS">
+      <node ref="JP11" pin="3"/>
+      <node ref="J17" pin="3"/>
+    </net>
+    <net code="64" name="Y_CS">
+      <node ref="J17" pin="2"/>
+      <node ref="JP10" pin="3"/>
+    </net>
+    <net code="65" name="X_CS">
+      <node ref="J17" pin="1"/>
+      <node ref="JP9" pin="3"/>
+    </net>
+    <net code="66" name="Net-(R26-Pad2)">
+      <node ref="U3" pin="2"/>
+      <node ref="R26" pin="2"/>
+    </net>
+    <net code="67" name="Net-(U3-Pad15)">
       <node ref="U3" pin="15"/>
     </net>
-    <net code="65" name="RTS">
+    <net code="68" name="RTS">
       <node ref="U3" pin="14"/>
-      <node ref="Q4" pin="2"/>
       <node ref="R23" pin="2"/>
+      <node ref="Q4" pin="2"/>
     </net>
-    <net code="66" name="DTR">
-      <node ref="R22" pin="2"/>
-      <node ref="U3" pin="13"/>
+    <net code="69" name="DTR">
       <node ref="Q5" pin="2"/>
+      <node ref="U3" pin="13"/>
+      <node ref="R22" pin="2"/>
     </net>
-    <net code="67" name="Net-(U3-Pad12)">
+    <net code="70" name="Net-(U3-Pad12)">
       <node ref="U3" pin="12"/>
     </net>
-    <net code="68" name="Net-(U3-Pad11)">
+    <net code="71" name="Net-(U3-Pad11)">
       <node ref="U3" pin="11"/>
     </net>
-    <net code="69" name="Net-(U3-Pad10)">
+    <net code="72" name="Net-(U3-Pad10)">
       <node ref="U3" pin="10"/>
     </net>
-    <net code="70" name="Net-(R26-Pad2)">
-      <node ref="R26" pin="2"/>
-      <node ref="U3" pin="2"/>
+    <net code="73" name="Net-(R27-Pad2)">
+      <node ref="U3" pin="3"/>
+      <node ref="R27" pin="2"/>
     </net>
-    <net code="71" name="Net-(J4-Pad9)">
+    <net code="74" name="Net-(J4-Pad9)">
       <node ref="J4" pin="9"/>
     </net>
-    <net code="72" name="Net-(J4-Pad8)">
+    <net code="75" name="Net-(J4-Pad8)">
       <node ref="J4" pin="8"/>
     </net>
-    <net code="73" name="Net-(J4-Pad1)">
+    <net code="76" name="Net-(J4-Pad1)">
       <node ref="J4" pin="1"/>
     </net>
-    <net code="74" name="Net-(U3-Pad9)">
+    <net code="77" name="Net-(U3-Pad9)">
       <node ref="U3" pin="9"/>
     </net>
-    <net code="75" name="Net-(U3-Pad8)">
+    <net code="78" name="Net-(U3-Pad8)">
       <node ref="U3" pin="8"/>
     </net>
-    <net code="76" name="Net-(U3-Pad7)">
+    <net code="79" name="Net-(U3-Pad7)">
       <node ref="U3" pin="7"/>
     </net>
-    <net code="77" name="Net-(R27-Pad2)">
-      <node ref="R27" pin="2"/>
-      <node ref="U3" pin="3"/>
-    </net>
-    <net code="78" name="E0_SLP">
-      <node ref="U9" pin="6"/>
+    <net code="80" name="E0_SLP">
       <node ref="JP16" pin="3"/>
+      <node ref="U9" pin="6"/>
     </net>
-    <net code="79" name="Net-(D11-Pad2)">
-      <node ref="R29" pin="1"/>
+    <net code="81" name="Net-(D11-Pad2)">
       <node ref="D11" pin="2"/>
+      <node ref="R29" pin="1"/>
     </net>
-    <net code="80" name="Net-(D10-Pad2)">
-      <node ref="R28" pin="1"/>
+    <net code="82" name="Net-(D10-Pad2)">
       <node ref="D10" pin="2"/>
+      <node ref="R28" pin="1"/>
     </net>
-    <net code="81" name="Net-(R18-Pad2)">
+    <net code="83" name="Net-(R18-Pad2)">
       <node ref="R18" pin="2"/>
       <node ref="U2" pin="4"/>
     </net>
-    <net code="82" name="5V1">
-      <node ref="L1" pin="2"/>
+    <net code="84" name="5V1">
       <node ref="R24" pin="1"/>
+      <node ref="L1" pin="2"/>
       <node ref="D14" pin="2"/>
       <node ref="C12" pin="2"/>
     </net>
-    <net code="83" name="FB">
-      <node ref="R25" pin="1"/>
+    <net code="85" name="FB">
       <node ref="R24" pin="2"/>
       <node ref="U2" pin="5"/>
+      <node ref="R25" pin="1"/>
     </net>
-    <net code="84" name="COMP">
-      <node ref="R21" pin="1"/>
+    <net code="86" name="COMP">
       <node ref="C9" pin="1"/>
+      <node ref="R21" pin="1"/>
       <node ref="U2" pin="6"/>
     </net>
-    <net code="85" name="Net-(D12-Pad2)">
+    <net code="87" name="Net-(D12-Pad2)">
       <node ref="D12" pin="2"/>
       <node ref="R30" pin="1"/>
     </net>
-    <net code="86" name="Net-(C8-Pad1)">
+    <net code="88" name="Net-(C8-Pad1)">
       <node ref="R21" pin="2"/>
       <node ref="C8" pin="1"/>
     </net>
-    <net code="87" name="/D+">
-      <node ref="J16" pin="3"/>
+    <net code="89" name="/D+">
       <node ref="D8" pin="1"/>
+      <node ref="J16" pin="3"/>
       <node ref="U3" pin="5"/>
     </net>
-    <net code="88" name="/D-">
+    <net code="90" name="/D-">
       <node ref="D7" pin="1"/>
-      <node ref="J16" pin="2"/>
       <node ref="U3" pin="6"/>
+      <node ref="J16" pin="2"/>
     </net>
-    <net code="89" name="VUSB">
-      <node ref="JP17" pin="2"/>
+    <net code="91" name="VUSB">
+      <node ref="D15" pin="2"/>
       <node ref="J16" pin="1"/>
     </net>
-    <net code="90" name="Net-(J16-Pad4)">
+    <net code="92" name="Net-(J16-Pad4)">
       <node ref="J16" pin="4"/>
     </net>
-    <net code="91" name="Net-(D13-Pad2)">
+    <net code="93" name="Net-(D13-Pad2)">
       <node ref="D13" pin="2"/>
       <node ref="R31" pin="1"/>
     </net>
-    <net code="92" name="Y_STEP_PIN">
-      <node ref="U8" pin="7"/>
+    <net code="94" name="Y_STEP_PIN">
       <node ref="U1" pin="9"/>
+      <node ref="U8" pin="7"/>
     </net>
-    <net code="93" name="Net-(U1-Pad22)">
+    <net code="95" name="Net-(U1-Pad22)">
       <node ref="U1" pin="22"/>
     </net>
-    <net code="94" name="Net-(U1-Pad21)">
+    <net code="96" name="Net-(U1-Pad21)">
       <node ref="U1" pin="21"/>
     </net>
-    <net code="95" name="Y_DIR_PIN">
+    <net code="97" name="Y_DIR_PIN">
       <node ref="U8" pin="8"/>
       <node ref="U1" pin="8"/>
     </net>
-    <net code="96" name="Net-(U1-Pad18)">
+    <net code="98" name="Net-(U1-Pad18)">
       <node ref="U1" pin="18"/>
     </net>
-    <net code="97" name="HEATER_E0_PIN">
-      <node ref="U1" pin="24"/>
+    <net code="99" name="HEATER_E0_PIN">
       <node ref="U11" pin="2"/>
+      <node ref="U1" pin="24"/>
     </net>
-    <net code="98" name="Net-(U1-Pad20)">
+    <net code="100" name="Net-(U1-Pad20)">
       <node ref="U1" pin="20"/>
     </net>
-    <net code="99" name="Net-(U1-Pad19)">
+    <net code="101" name="Net-(U1-Pad19)">
       <node ref="U1" pin="19"/>
     </net>
-    <net code="100" name="HEATER_BED_PIN">
+    <net code="102" name="HEATER_BED_PIN">
       <node ref="U1" pin="26"/>
       <node ref="R36" pin="1"/>
     </net>
-    <net code="101" name="Net-(U1-Pad17)">
+    <net code="103" name="Net-(U1-Pad17)">
       <node ref="U1" pin="17"/>
     </net>
-    <net code="102" name="FAN_E0_PIN">
+    <net code="104" name="FAN_E0_PIN">
       <node ref="U12" pin="2"/>
       <node ref="U1" pin="16"/>
     </net>
-    <net code="103" name="Z_DIR_PIN">
+    <net code="105" name="Z_DIR_PIN">
       <node ref="U6" pin="8"/>
       <node ref="U1" pin="14"/>
     </net>
-    <net code="104" name="Z_STEP_PIN">
-      <node ref="U1" pin="13"/>
+    <net code="106" name="Z_STEP_PIN">
       <node ref="U6" pin="7"/>
+      <node ref="U1" pin="13"/>
     </net>
-    <net code="105" name="X_STEP_PIN">
-      <node ref="U1" pin="12"/>
+    <net code="107" name="X_STEP_PIN">
       <node ref="U5" pin="7"/>
+      <node ref="U1" pin="12"/>
     </net>
-    <net code="106" name="X_DIR_PIN">
+    <net code="108" name="X_DIR_PIN">
       <node ref="U5" pin="8"/>
       <node ref="U1" pin="11"/>
     </net>
-    <net code="107" name="MOTOR_EN_PIN">
-      <node ref="R32" pin="2"/>
+    <net code="109" name="MOTOR_EN_PIN">
       <node ref="U8" pin="1"/>
-      <node ref="U6" pin="1"/>
-      <node ref="U9" pin="1"/>
-      <node ref="U1" pin="10"/>
       <node ref="U5" pin="1"/>
+      <node ref="U6" pin="1"/>
+      <node ref="R32" pin="2"/>
+      <node ref="U1" pin="10"/>
+      <node ref="U9" pin="1"/>
     </net>
-    <net code="108" name="Net-(U1-Pad32)">
+    <net code="110" name="Net-(U1-Pad32)">
       <node ref="U1" pin="32"/>
     </net>
-    <net code="109" name="SS">
+    <net code="111" name="SS">
       <node ref="U1" pin="29"/>
       <node ref="J4" pin="2"/>
     </net>
-    <net code="110" name="E0_DIR_PIN">
+    <net code="112" name="E0_DIR_PIN">
       <node ref="U9" pin="8"/>
       <node ref="U1" pin="28"/>
     </net>
-    <net code="111" name="E0_STEP_PIN">
+    <net code="113" name="E0_STEP_PIN">
       <node ref="U1" pin="27"/>
       <node ref="U9" pin="7"/>
     </net>
-    <net code="112" name="Net-(C10-Pad2)">
-      <node ref="U2" pin="1"/>
+    <net code="114" name="Net-(C10-Pad2)">
       <node ref="C10" pin="2"/>
+      <node ref="U2" pin="1"/>
     </net>
-    <net code="113" name="Net-(U2-Pad3)">
+    <net code="115" name="Net-(U2-Pad3)">
       <node ref="U2" pin="3"/>
     </net>
-    <net code="114" name="Net-(C10-Pad1)">
+    <net code="116" name="Net-(C10-Pad1)">
       <node ref="L1" pin="1"/>
-      <node ref="D9" pin="1"/>
-      <node ref="U2" pin="8"/>
       <node ref="C10" pin="1"/>
+      <node ref="U2" pin="8"/>
+      <node ref="D9" pin="1"/>
     </net>
-    <net code="115" name="Net-(F2-Pad2)">
+    <net code="117" name="Net-(F2-Pad2)">
       <node ref="J9" pin="4"/>
       <node ref="F2" pin="2"/>
     </net>
-    <net code="116" name="Net-(F1-Pad2)">
-      <node ref="J9" pin="1"/>
+    <net code="118" name="Net-(F1-Pad2)">
       <node ref="F1" pin="2"/>
+      <node ref="J9" pin="1"/>
     </net>
-    <net code="117" name="Z_2A">
-      <node ref="U6" pin="13"/>
-      <node ref="J22" pin="3"/>
-      <node ref="J22" pin="4"/>
+    <net code="119" name="Net-(J21-Pad2)">
+      <node ref="U5" pin="13"/>
+      <node ref="J21" pin="2"/>
     </net>
-    <net code="118" name="Net-(J21-Pad3)">
+    <net code="120" name="Net-(J21-Pad1)">
+      <node ref="J21" pin="1"/>
+      <node ref="U5" pin="14"/>
+    </net>
+    <net code="121" name="Net-(J21-Pad3)">
       <node ref="U5" pin="12"/>
       <node ref="J21" pin="3"/>
     </net>
-    <net code="119" name="Net-(J21-Pad1)">
-      <node ref="U5" pin="14"/>
-      <node ref="J21" pin="1"/>
-    </net>
-    <net code="120" name="Net-(J21-Pad2)">
-      <node ref="J21" pin="2"/>
-      <node ref="U5" pin="13"/>
-    </net>
-    <net code="121" name="Net-(J21-Pad4)">
+    <net code="122" name="Net-(J21-Pad4)">
       <node ref="U5" pin="11"/>
       <node ref="J21" pin="4"/>
     </net>
-    <net code="122" name="Net-(D1-Pad1)">
-      <node ref="D1" pin="1"/>
+    <net code="123" name="Net-(D1-Pad1)">
       <node ref="J3" pin="2"/>
+      <node ref="D1" pin="1"/>
       <node ref="Q1" pin="2"/>
     </net>
-    <net code="123" name="Net-(D1-Pad2)">
+    <net code="124" name="Net-(D1-Pad2)">
       <node ref="R5" pin="1"/>
       <node ref="D1" pin="2"/>
     </net>
-    <net code="124" name="Net-(D3-Pad1)">
-      <node ref="J7" pin="2"/>
-      <node ref="Q2" pin="2"/>
+    <net code="125" name="Net-(D3-Pad1)">
       <node ref="D3" pin="1"/>
+      <node ref="Q2" pin="2"/>
+      <node ref="J7" pin="2"/>
     </net>
-    <net code="125" name="Net-(Q2-Pad1)">
+    <net code="126" name="Net-(Q2-Pad1)">
       <node ref="Q2" pin="1"/>
       <node ref="R10" pin="1"/>
     </net>
-    <net code="126" name="Net-(D3-Pad2)">
-      <node ref="D3" pin="2"/>
+    <net code="127" name="Net-(D3-Pad2)">
       <node ref="R9" pin="1"/>
+      <node ref="D3" pin="2"/>
     </net>
-    <net code="127" name="Net-(Q5-Pad1)">
-      <node ref="R23" pin="1"/>
+    <net code="128" name="Net-(Q5-Pad1)">
       <node ref="Q5" pin="1"/>
+      <node ref="R23" pin="1"/>
     </net>
-    <net code="128" name="Net-(Q4-Pad1)">
+    <net code="129" name="Net-(Q4-Pad1)">
       <node ref="R22" pin="1"/>
       <node ref="Q4" pin="1"/>
     </net>
-    <net code="129" name="TO_HEATER_E0">
-      <node ref="R10" pin="2"/>
-      <node ref="U11" pin="4"/>
+    <net code="130" name="TO_HEATER_E0">
       <node ref="R11" pin="2"/>
+      <node ref="U11" pin="4"/>
+      <node ref="R10" pin="2"/>
     </net>
-    <net code="130" name="Net-(D6-Pad1)">
-      <node ref="J10" pin="2"/>
+    <net code="131" name="Net-(D6-Pad1)">
       <node ref="Q3" pin="2"/>
       <node ref="D6" pin="1"/>
+      <node ref="J10" pin="2"/>
     </net>
-    <net code="131" name="TO_FAN_E0">
+    <net code="132" name="TO_FAN_E0">
+      <node ref="U12" pin="4"/>
       <node ref="R13" pin="2"/>
       <node ref="R14" pin="2"/>
-      <node ref="U12" pin="4"/>
     </net>
-    <net code="132" name="Net-(Q3-Pad1)">
-      <node ref="R13" pin="1"/>
+    <net code="133" name="Net-(Q3-Pad1)">
       <node ref="Q3" pin="1"/>
+      <node ref="R13" pin="1"/>
     </net>
   </nets>
 </export>

@@ -4,7 +4,7 @@ v1.3
 ----
 - Added debounce capacitor to RESET button.
 - Change VUSB_EN jumper to 5V_SEL jumper, to select between VUSB and VIN for 5V source.
-- Changed F1 to 15A (Bel 0679H), F2 to 25A (Bel 0678H).
+- Changed F1 to 15A (Littelfuse 0451), F2 to 30A (Littelfuse 0456).
 
 v1.2
 ----
