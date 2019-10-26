@@ -3,8 +3,8 @@
 
 This is a bare-minimum 3D printer control board based on the ESP32 microcontroller, which comes with built-in WiFi and BlueTooth.
 
-**Work in progress! Do not attempt production using this schematic!**<br>
-**Current version: v1.1**<br>
+# Further development of this board has shifted to this [repo](https://github.com/maplerainresearch/MRR_ESPA). Please see the new repo for the latest version (v1.3 as of October 2019).
+This repo will continue to exist to provide access to the development "log" recorded in this [issue](https://github.com/vivian-ng/MRR_ESPA/issues/1).<br>
 
 Features:
 - Able to use up to 4 stepper drivers: X, Y, Z, and E0
@@ -13,8 +13,7 @@ Features:
 - X, Y, and Z min endstops
 - Allows the use of a Z-axis probe, such as an inductive sensor, running on the input supply voltage (12V to 24V)
 - AUX1 connector for use with an external host, such as the closed-source MKS TFT32 (**Untested!!**)
-- Physical size of 99.5mm by 99.5mm. Mounting holes are 3.5mm in diameter, with centers 4mm from the edges.
-- "BOOT" button can be used to reset the board.
+- Physical size of 99.5mm by 90.5mm. Mounting holes are 3.5mm in diameter, with centers 4mm from the edges.
 
 # Firmware
 
