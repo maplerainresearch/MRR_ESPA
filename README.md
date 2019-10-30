@@ -6,7 +6,10 @@ This is a bare-minimum 3D printer control board based on the ESP32 microcontroll
 ![](media/boards/MRR_ESPA_v1.3.jpg)
 Current version: v1.3
 
-For inquiries about how to obtain the MRR ESPA, please email [info@maplerain.com](mailto:info@maplerain.com) with the subject "MRR ESPA".
+Get a pre-launch version at our [store](https://www.maplerain.com/en/products/mrr-espa-prelaunch).
+
+Facebook [page](https://www.facebook.com/mrrespa/)
+Facebook [group](https://www.facebook.com/groups/mrr.espa/) (for discussions, etc.)
 
 ## Features:
 - Able to use up to 4 stepper drivers: X, Y, Z, and E0
