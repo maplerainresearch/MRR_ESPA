@@ -8,7 +8,7 @@ Current version: v1.3
 
 Get a pre-launch version at our [store](https://www.maplerain.com/en/products/mrr-espa-prelaunch).
 
-Facebook [page](https://www.facebook.com/mrrespa/)
+Facebook [page](https://www.facebook.com/mrrespa/) <br>
 Facebook [group](https://www.facebook.com/groups/mrr.espa/) (for discussions, etc.)
 
 ## Features:
