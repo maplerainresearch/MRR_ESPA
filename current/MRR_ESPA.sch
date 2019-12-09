@@ -2440,7 +2440,7 @@ Wire Wire Line
 Text Notes 3800 3500 0    79   ~ 16
 Reset switch
 $Comp
-L Connector_Generic:Conn_02x04_Counter_Clockwise J15
+L Connector_Generic:Conn_02x04_Odd_Even J15
 U 1 1 5C6AAFFE
 P 6800 9250
 F 0 "J15" H 6850 9567 50  0000 C CNN
@@ -2476,27 +2476,25 @@ SCK
 $Comp
 L power:+5V #PWR0160
 U 1 1 5C6BF357
-P 6450 9150
-F 0 "#PWR0160" H 6450 9000 50  0001 C CNN
-F 1 "+5V" H 6465 9323 50  0000 C CNN
-F 2 "" H 6450 9150 50  0001 C CNN
-F 3 "" H 6450 9150 50  0001 C CNN
-	1    6450 9150
+P 6600 9150
+F 0 "#PWR0160" H 6600 9000 50  0001 C CNN
+F 1 "+5V" H 6615 9323 50  0000 C CNN
+F 2 "" H 6600 9150 50  0001 C CNN
+F 3 "" H 6600 9150 50  0001 C CNN
+	1    6600 9150
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0162
 U 1 1 5C6BF511
-P 6600 9450
-F 0 "#PWR0162" H 6600 9200 50  0001 C CNN
-F 1 "GND" V 6605 9277 50  0000 C CNN
-F 2 "" H 6600 9450 50  0001 C CNN
-F 3 "" H 6600 9450 50  0001 C CNN
-	1    6600 9450
+P 6600 9250
+F 0 "#PWR0162" H 6600 9000 50  0001 C CNN
+F 1 "GND" V 6605 9077 50  0000 C CNN
+F 2 "" H 6600 9250 50  0001 C CNN
+F 3 "" H 6600 9250 50  0001 C CNN
+	1    6600 9250
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	6600 9150 6450 9150
 $Comp
 L power:+3.3V #PWR0165
 U 1 1 5C75C979
@@ -3198,16 +3196,8 @@ F 3 "" H 850 1000 50  0001 C CNN
 	1    850  1000
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6600 9250 6450 9250
-Wire Wire Line
-	6450 9250 6450 9150
-Connection ~ 6450 9150
-Wire Wire Line
-	6600 9350 6600 9450
-Connection ~ 6600 9450
-NoConn ~ 7100 9250
-NoConn ~ 7100 9450
+NoConn ~ 6600 9350
+NoConn ~ 6600 9450
 Text Label 7000 4150 0    50   ~ 0
 D+
 Text Label 7000 4250 0    50   ~ 0
@@ -3659,7 +3649,7 @@ $EndComp
 Wire Wire Line
 	8100 3650 8100 3450
 Connection ~ 8100 3450
-Text GLabel 7100 9150 2    50   BiDi ~ 0
+Text GLabel 7100 9450 2    50   BiDi ~ 0
 UART-
 Text GLabel 7100 9350 2    50   BiDi ~ 0
 UART+
@@ -3838,4 +3828,26 @@ Wire Wire Line
 Wire Wire Line
 	4150 3650 4150 3950
 Connection ~ 4150 3950
+$Comp
+L power:+5V #PWR?
+U 1 1 5DEF0F24
+P 7100 9150
+F 0 "#PWR?" H 7100 9000 50  0001 C CNN
+F 1 "+5V" H 7115 9323 50  0000 C CNN
+F 2 "" H 7100 9150 50  0001 C CNN
+F 3 "" H 7100 9150 50  0001 C CNN
+	1    7100 9150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DEF1033
+P 7100 9250
+F 0 "#PWR?" H 7100 9000 50  0001 C CNN
+F 1 "GND" V 7105 9077 50  0000 C CNN
+F 2 "" H 7100 9250 50  0001 C CNN
+F 3 "" H 7100 9250 50  0001 C CNN
+	1    7100 9250
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC
